@@ -1,0 +1,6 @@
+if has('gui_macvim')
+  macmenu File.Print key=<nop>
+  macmenu File.New\ Window key=<nop>
+  map <D-p> :CtrlP<CR>
+  set guioptions-=mTlrb
+endif

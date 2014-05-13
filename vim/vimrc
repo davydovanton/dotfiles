@@ -1,0 +1,185 @@
+execute pathogen#infect()
+execute pathogen#helptags()
+filetype plugin indent on
+
+set tags=.git/tags
+set guifont=Droid\ Sans\ Mono\ 12
+let g:tube_terminal = "iterm"
+
+Helptag
+
+" colorscheme railscasts
+let g:seoul256_background = 236
+colo seoul256
+
+syntax on
+
+set hidden
+set number
+set ts=2
+set sw=2
+set autoindent
+set smartindent
+set expandtab
+set nocompatible
+set ignorecase
+set hlsearch
+set splitbelow " new splits are down
+set splitright " new vsplits are to the right
+set smartcase
+set incsearch
+set laststatus=2
+set visualbell
+set title
+set showcmd
+set pastetoggle=
+set iminsert=0
+set linebreak
+set completeopt=longest,menuone
+set relativenumber
+set wildmenu
+set noerrorbells
+set novisualbell
+set t_vb=
+set t_vb=
+set tm=500
+set nobackup
+set nowb
+set noswapfile
+set timeoutlen=500
+set lazyredraw
+set guioptions-=rL
+set langmenu=en_US.UTF-8
+set encoding=utf-8
+set fileencoding=utf-8
+language mes en_US.UTF-8
+
+let g:ruby_path = system('rvm current')
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#tabline#left_sep = '|'
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_fugitive_prefix = '⎇ '
+let g:airline_paste_symbol = 'ρ'
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#branch#empty_message = ''
+let g:airline#extensions#ctrlp#color_template = 'normal'
+let g:airline#extensions#ctrlp#color_template = 'visual'
+let g:airline#extensions#ctrlp#color_template = 'replace'
+
+let g:bufExplorerDefaultHelp=0
+let g:bufExplorerShowRelativePath=1
+let g:bufExplorerSortBy='mru'
+let g:bufExplorerSplitRight=0
+
+let g:neocomplete#enable_at_startup = 1
+
+let g:ruby_indent_access_modifier_style = 'indent'
+let ruby_operators = 0
+
+let g:surround_{char2nr('%')} = "%(\r)"
+let g:surround_{char2nr('w')} = "%w(\r)"
+let g:surround_{char2nr('#')} = "#{\r}"
+let g:surround_{char2nr('|')} = "|\r|"
+
+let g:syntastic_enable_signs = 1
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '⚠'
+
+let g:vimrubocop_config = '~/.rubocop.yml'
+
+nmap <space> <leader>
+
+nmap <leader>n :noh<CR>
+
+nmap <F2>   :NERDTree<cr>
+nmap <S-F2> :NERDTreeFind<cr>
+nmap <F3>   :TagbarToggle<CR>
+
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+" experimental mappings------------
+nnoremap <tab> >>
+nnoremap <s-tab> <<
+vnoremap <tab> >
+vnoremap <s-tab> <
+
+nmap <leader>o o<ESC>
+nmap <leader>O O<ESC>j
+
+nmap <leader>< <C-w>10<
+nmap <leader>> <C-w>10>
+nmap <leader>+ <C-w>10+
+nmap <leader>- <C-w>10-
+
+nmap <leader>p :CtrlPBufTag<CR>
+
+" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
+" bind K to grep word under cursor
+nnoremap <leader>f :grep! "\b<C-R><C-W>\b" --ignore-dir log<CR>:cw<CR>
+
+function! ClearRegisters()
+  let regs='abcdefghijklmnopqrstuvwxyz0123456789'
+  let i=0
+  while (i<strlen(regs))
+    exec 'let @'.regs[i].'=""'
+    let i=i+1
+  endwhile
+endfunction
+command! ClearRegisters call ClearRegisters()
+
+" Strip trailing whitespace (,ss)
+function! StripWhitespace()
+  let save_cursor = getpos(".")
+  let old_query = getreg('/')
+  :%s/\s\+$//e
+  call setpos('.', save_cursor)
+  call setreg('/', old_query)
+endfunction
+noremap <leader>ss :call StripWhitespace()<CR>
+
+" Automatic commands
+if has("autocmd")
+  " Enable file type detection
+  filetype on
+  " Treat .json files as .js
+  autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+endif
+
+autocmd! GUIEnter * set vb t_vb=
+augroup vimrcEx
+  au BufWinEnter,BufRead,BufNewFile Gemfile     set ft=ruby
+  au BufWinEnter,BufRead,BufNewFile Rakefile    set ft=ruby
+  au BufWinEnter,BufRead,BufNewFile Guardfile   set ft=ruby
+  au BufWinEnter,BufRead,BufNewFile Vagrantfile set ft=ruby
+  au BufWinEnter,BufRead,BufNewFile Thorfile    set ft=ruby
+  au BufWinEnter,BufRead,BufNewFile Gruntfile   set ft=javascript
+  au BufWinEnter,BufRead,BufNewFile *.fdoc      set ft=yaml
+  au BufWinEnter,BufRead,BufNewFile *.md        set ft=markdown
+  au BufWinEnter,BufRead,BufNewFile *.slim      set ft=slim
+augroup END
+

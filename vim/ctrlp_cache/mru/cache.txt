@@ -1,0 +1,11 @@
+/Users/anton/.vimrc
+/Users/anton/work/job/storytut/app/models/post.rb
+/Users/anton/work/job/storytut/app/models/taxonomy.rb
+/Users/anton/work/job/storytut/app/models/user.rb
+/Users/anton/work/job/storytut/spec/models/user_spec.rb
+/Users/anton/work/job/storytut/db/schema.rb
+/Users/anton/work/job/storytut/app/models/comment.rb
+/Users/anton/work/job/storytut/bin/bundle
+/Users/anton/work/job/storytut/app/admin/user.rb
+/Users/anton/work/job/storytut/db/seeds.rb
+/Users/anton/work/job/storytut/public/_index.html

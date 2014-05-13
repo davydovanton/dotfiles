@@ -1,0 +1,18 @@
+# encoding: utf-8
+require 'rubygems'
+require 'irb/completion'
+require 'wirble'
+require 'interactive_editor'
+require 'pry'
+
+IRB.conf[:SAVE_HISTORY] = 1000
+IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
+
+Wirble.init
+Wirble.colorize
+
+class Object
+  def local_methods
+    (methods - Object.instance_methods).sort
+  end
+end
