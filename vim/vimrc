@@ -182,4 +182,3 @@ augroup vimrcEx
   au BufWinEnter,BufRead,BufNewFile *.md        set ft=markdown
   au BufWinEnter,BufRead,BufNewFile *.slim      set ft=slim
 augroup END
-
