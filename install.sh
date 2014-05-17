@@ -4,9 +4,10 @@ INSTALLATION_DIR=~/bin
 
 printf "\033[2K\033[00;32mCreating a backup file of your vim files...\n\033[0m\n"
 
-mv ~/.vimrc ~/.vimrc.bak
+cp ~/.vimrc ~/.vimrc.orig
+cp ~/.zshrc ~/.zshrc.orig
 
-printf "\033[2K\033[00;32mBackup created in the ~/.vimrc.bac file\033[0m\n\n"
+printf "\033[2K\033[00;32mBackup created! \033[0m\n\n"
 
 printf "\033[2K\033[00;32mDownloading project...\033[0m\n\n"
 cd $INSTALLATION_DIR
@@ -20,6 +21,9 @@ ln -sf $CURRENT_DIR/vim/vimrc ~/.vimrc
 ln -sf $CURRENT_DIR/vim/gvimrc ~/.gvimrc
 
 ln -sf $CURRENT_DIR/zsh/zshrc ~/.zshrc
+curl -L http://install.ohmyz.sh | sh
+cp -sf $CURRENT_DIR/zsh/themes/excess.zsh-theme ~/.oh-my-zsh/themes/excess.zsh-theme
+
 ln -sf $CURRENT_DIR/ctags ~/.ctags
 ln -sf $CURRENT_DIR/tmux ~/.tmux.conf
 
@@ -27,8 +31,11 @@ ln -sf $CURRENT_DIR/ruby/rubocop.yml ~/.rubocop.yml
 ln -sf $CURRENT_DIR/ruby/gemrc ~/.gemrc
 ln -sf $CURRENT_DIR/ruby/irbrc ~/.irbrc
 
+cp -sf $CURRENT_DIR/iterm2/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
+
 ln -sf $CURRENT_DIR/git/gitconfig ~/.gitconfig
 ln -sf $CURRENT_DIR/git/gitignore_global ~/.gitignore_global
+ln -sf $CURRENT_DIR/git/hooks/post-commit ~/.git/hooks/post-commit
  
 
 printf "\033[2K\033[00;32mInstalling vim plugins...\033[0m\n\n"

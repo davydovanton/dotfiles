@@ -513,6 +513,8 @@
 	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/bin/dotfiles/iterm2</string>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -548,9 +550,9 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>175 153 924 485 0 0 1280 778 </string>
+	<string>317 282 924 485 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 26 1277 752 0 0 1280 778 </string>
+	<string>0 10 1277 768 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -711,11 +713,11 @@
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.15055646002292633</real>
+				<real>0.089119061827659607</real>
 				<key>Green Component</key>
-				<real>0.14731092751026154</real>
+				<real>0.086658857762813568</real>
 				<key>Red Component</key>
-				<real>0.1504797488451004</real>
+				<real>0.088978216052055359</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -2084,7 +2086,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-05-14T14:57:26Z</date>
+	<date>2014-05-17T08:22:30Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
