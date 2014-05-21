@@ -1,4 +1,4 @@
-" MIT License. Copyright (c) 2013 Bailey Ling.
+" MIT License. Copyright (c) 2013-2014 Bailey Ling.
 " vim: et ts=2 sts=2 sw=2
 
 if !get(g:, 'loaded_signify', 0) && !get(g:, 'loaded_gitgutter', 0)
@@ -16,8 +16,12 @@ function! s:get_hunks_signify()
   return []
 endfunction
 
+function! s:is_branch_empty()
+  return exists('*airline#extensions#branch#head') && empty(airline#extensions#branch#head())
+endfunction
+
 function! s:get_hunks_gitgutter()
-  if !get(g:, 'gitgutter_enabled', 0)
+  if !get(g:, 'gitgutter_enabled', 0) || s:is_branch_empty()
     return ''
   endif
   return GitGutterGetHunkSummary()

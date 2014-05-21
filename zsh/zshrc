@@ -79,3 +79,4 @@ alias 'vbox-restart=sudo /Library/StartupItems/VirtualBox/VirtualBox restart'
 alias 'radio-rock-fm=mplayer http://mp3.nashe.ru/rock-128.mp3 -msgcolor'
 alias 'radio-transe=mplayer http://62.210.125.247:8090/stream -msgcolor'
 
+alias 'ctags=/usr/local/bin/ctags'

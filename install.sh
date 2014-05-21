@@ -20,9 +20,9 @@ ln -sf $CURRENT_DIR/vim ~/.vim
 ln -sf $CURRENT_DIR/vim/vimrc ~/.vimrc
 ln -sf $CURRENT_DIR/vim/gvimrc ~/.gvimrc
 
-ln -sf $CURRENT_DIR/zsh/zshrc ~/.zshrc
 curl -L http://install.ohmyz.sh | sh
 cp -sf $CURRENT_DIR/zsh/themes/excess.zsh-theme ~/.oh-my-zsh/themes/excess.zsh-theme
+ln -sf $CURRENT_DIR/zsh/zshrc ~/.zshrc
 
 ln -sf $CURRENT_DIR/ctags ~/.ctags
 ln -sf $CURRENT_DIR/tmux ~/.tmux.conf
@@ -37,9 +37,6 @@ ln -sf $CURRENT_DIR/git/gitconfig ~/.gitconfig
 ln -sf $CURRENT_DIR/git/gitignore_global ~/.gitignore_global
 ln -sf $CURRENT_DIR/git/hooks/post-commit ~/.git/hooks/post-commit
  
-printf "\033[2K\033[00;32mInstalling Homebrew\033[0m\n\n"
-sh homebrew/install.sh
-
 printf "\033[2K\033[00;32mInstalling vim plugins...\033[0m\n\n"
 git submodule update --init
 
