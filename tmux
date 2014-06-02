@@ -1,4 +1,4 @@
-set-option -g default-command "reattach-to-user-namespace -l zsh"
+/* set-option -g default-command "reattach-to-user-namespace -l zsh" */
 
 start window index of 1
 set-option -g base-index 1
