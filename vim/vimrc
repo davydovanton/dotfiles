@@ -12,8 +12,10 @@ Helptag
 let g:seoul256_background = 236
 colo seoul256
 
+
 syntax on
 
+set iskeyword-=. " use dot for limiter word
 set hidden
 set number
 set ts=2
