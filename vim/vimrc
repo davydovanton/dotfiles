@@ -1,17 +1,44 @@
-execute pathogen#infect()
-execute pathogen#helptags()
-filetype plugin indent on
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'MarcWeber/vim-addon-mw-utils.git'
+Plugin 'Yggdroot/indentLine'
+Plugin 'bling/vim-airline'
+Plugin 'corntrace/bufexplorer'
+Plugin 'dockyard/vim-easydir'
+Plugin 'elzr/vim-json'
+Plugin 'fisadev/vim-ctrlp-cmdpalette'
+Plugin 'garbas/vim-snipmate'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'gorodinskiy/vim-coloresque'
+Plugin 'kien/ctrlp.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'powerman/vim-plugin-ruscmd'
+Plugin 'rking/ag.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'slim-template/vim-slim'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tomtom/tlib_vim.git'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-pathogen'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'vim-scripts/tComment'
+Plugin 'junegunn/seoul256.vim'
+call vundle#end()            " required
+filetype plugin indent on 
 
 set tags=.git/tags
 set guifont=Droid\ Sans\ Mono\ 12
 let g:tube_terminal = "iterm"
 
-Helptag
-
 " colorscheme railscasts
 let g:seoul256_background = 236
 colo seoul256
-
 
 syntax on
 
@@ -81,8 +108,8 @@ let g:bufExplorerSplitRight=0
 
 let g:neocomplete#enable_at_startup = 1
 
-let g:ruby_indent_access_modifier_style = 'indent'
-let ruby_operators = 0
+let g:ruby_indent_access_modifier_style = 'outdent'
+let ruby_operators = 1
 
 let g:surround_{char2nr('%')} = "%(\r)"
 let g:surround_{char2nr('w')} = "%w(\r)"
@@ -129,6 +156,7 @@ nmap <leader>+ <C-w>10+
 nmap <leader>- <C-w>10-
 
 nmap <leader>p :CtrlPBufTag<CR>
+" nmap <leader>hsh :%s/:\([^ ]*\)\(\s*\)=>/\1:/g
 
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
 
@@ -178,6 +206,10 @@ if has("autocmd")
   autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
 
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1 
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+
 autocmd! GUIEnter * set vb t_vb=
 augroup vimrcEx
   au BufWinEnter,BufRead,BufNewFile Gemfile     set ft=ruby
@@ -190,3 +222,7 @@ augroup vimrcEx
   au BufWinEnter,BufRead,BufNewFile *.md        set ft=markdown
   au BufWinEnter,BufRead,BufNewFile *.slim      set ft=slim
 augroup END
+
+if executable('zsh')
+  set shell=zsh
+endif
