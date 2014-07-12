@@ -1,4 +1,13 @@
-/* set-option -g default-command "reattach-to-user-namespace -l zsh" */
+set-option -g default-command "reattach-to-user-namespace -l $SHELL"
+
+# Setup 'v' to begin selection as in Vim
+bind-key -t vi-copy v begin-selection
+bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
+
+# Update default binding of `Enter` to also use copy-pipe
+unbind -t vi-copy Enter
+bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
+
 
 start window index of 1
 set-option -g base-index 1
@@ -39,6 +48,7 @@ unbind C-b
 set -g prefix C-a
 # Allow C-A a to send C-A to application
 bind C-a send-prefix
+bind r source-file ~/.tmux.conf \; display-message "Config reloaded."
 
 # Reload key
 bind r source-file ~/.tmux.conf

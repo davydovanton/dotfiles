@@ -58,11 +58,7 @@ export PATH="/opt/local/bin:/opt/local/sbin:/Users/anton/.rvm/gems/ruby-2.0.0-p2
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='mvim'
-fi
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -80,4 +76,6 @@ alias 'radio-rock-fm=mplayer http://mp3.nashe.ru/rock-128.mp3 -msgcolor'
 alias 'radio-transe=mplayer http://62.210.125.247:8090/stream -msgcolor'
 
 alias 'ctags=/usr/local/bin/ctags'
-# alias 'vim=/usr/local/bin/vim'
+alias 'vim=/usr/local/bin/vim'
+alias 'zsh=/usr/local/bin/zsh'
+alias 'tmux=TERM=screen-256color-bce tmux'
