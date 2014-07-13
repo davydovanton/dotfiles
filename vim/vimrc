@@ -1,4 +1,4 @@
-set nocompatible              " be iMproved, required
+set nocompatible              " be improved, required
 filetype off                  " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -29,6 +29,9 @@ Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/tComment'
 Plugin 'junegunn/seoul256.vim'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'jgdavey/tslime.vim'
+Plugin 'thoughtbot/vim-rspec'
 
 " note-vim
 Plugin 'xolox/vim-notes'
@@ -46,6 +49,7 @@ colo seoul256
 
 syntax on
 
+set clipboard=unnamed 
 set mouse=a
 set iskeyword-=. " use dot for limiter word
 set hidden
@@ -130,8 +134,14 @@ let g:syntastic_warning_symbol = '⚠'
 
 let g:vimrubocop_config = '~/.rubocop.yml'
 
-nmap <space> <leader>
+" vim rspec 
+let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+map <Leader>sf :call RunCurrentSpecFile()<CR>
+map <Leader>sc :call RunNearestSpec()<CR>
+map <Leader>sl :call RunLastSpec()<CR>
+map <Leader>sa :call RunAllSpecs()<CR>
 
+nmap <space> <leader>
 nmap <leader>n :noh<CR>
 
 nmap <F2>   :NERDTree<cr>
@@ -154,6 +164,13 @@ nnoremap <tab> >>
 nnoremap <s-tab> <<
 vnoremap <tab> >
 vnoremap <s-tab> <
+
+nnoremap th  :tabfirst<CR>
+nnoremap tj  :tabprev<CR>
+nnoremap tk  :tabnext<CR>
+nnoremap tl  :tablast<CR>
+nnoremap td  :tabclose<CR>
+nnoremap tn  :tabnew<CR>
 
 nmap <leader>o o<ESC>
 nmap <leader>O O<ESC>j
@@ -242,5 +259,3 @@ endif
 if executable('zsh')
   set shell=zsh
 endif
-
-map <C-c> "*y

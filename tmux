@@ -8,13 +8,20 @@ bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
 unbind -t vi-copy Enter
 bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
 
-
 start window index of 1
 set-option -g base-index 1
 setw -g pane-base-index 1
 
 # sane scrolling
 # set-option -g terminal-overrides 'xterm*:smcup@:rmcup@'
+
+# vim-tmux-navigator plugin
+# Smart pane switching with awareness of vim splits
+bind -n C-h run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)g?(view|vim?)(diff)?$' && tmux send-keys C-h) || tmux select-pane -L"
+bind -n C-j run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)g?(view|vim?)(diff)?$' && tmux send-keys C-j) || tmux select-pane -D"
+bind -n C-k run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)g?(view|vim?)(diff)?$' && tmux send-keys C-k) || tmux select-pane -U"
+bind -n C-l run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)g?(view|vim?)(diff)?$' && tmux send-keys C-l) || tmux select-pane -R"
+bind -n C-\ run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)g?(view|vim?)(diff)?$' && tmux send-keys 'C-\\') || tmux select-pane -l"
 
 # UTF-8
 set-option -g status-utf8 on
@@ -79,7 +86,6 @@ bind-key -r J resize-pane -D 5
 bind-key -r K resize-pane -U 5
 bind-key -r H resize-pane -L 5
 bind-key -r L resize-pane -R 5
-
 
 # statusbar --------------------------------------------------------------
 
