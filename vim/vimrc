@@ -32,6 +32,7 @@ Plugin 'junegunn/seoul256.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'jgdavey/tslime.vim'
 Plugin 'thoughtbot/vim-rspec'
+Plugin 'jpalardy/vim-slime'
 
 " note-vim
 Plugin 'xolox/vim-notes'
@@ -133,6 +134,9 @@ let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
 
 let g:vimrubocop_config = '~/.rubocop.yml'
+
+" vim-slime
+let g:slime_target = "tmux"
 
 " vim rspec 
 let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'

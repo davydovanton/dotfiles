@@ -80,6 +80,13 @@ bind n send-keys " ~/tmux-panes -v" C-m
 setw -g monitor-activity on
 set -g visual-activity on
 
+# disable bell
+set-option -g bell-on-alert off
+set-option -g bell-action none
+set-option -g visual-bell off
+set-option -g visual-activity off
+set-option -g visual-content off 
+
 # panes
 
 bind-key -r J resize-pane -D 5
@@ -87,40 +94,51 @@ bind-key -r K resize-pane -U 5
 bind-key -r H resize-pane -L 5
 bind-key -r L resize-pane -R 5
 
-# statusbar --------------------------------------------------------------
+##########################
+# Status Bar
+###########################
 
-# # default statusbar colors
-set-option -g status-fg white
-set-option -g status-bg black
-set-option -g status-attr default
+# enable UTF-8 support in status bar
+set -g status-utf8 on
 
-# # default window title colors
-set-window-option -g window-status-fg cyan
-set-window-option -g window-status-bg default
-set-window-option -g window-status-attr dim
+# set refresh interval for status bar
+set -g status-interval 30
 
-# # active window title colors
-set-window-option -g window-status-current-fg white
-set-window-option -g window-status-current-bg red
-set-window-option -g window-status-current-attr bright
+# center the status bar
+set -g status-justify left
 
-set-option -g pane-border-fg green
-set-option -g pane-border-bg black
-set-option -g pane-active-border-fg white
-set-option -g pane-active-border-bg yellow
+# show session, window, pane in left status bar
+set -g status-left-length 40
+set -g status-left '#[fg=green]#S#[fg=blue] #I:#P'
 
-# # command/message line colors
-set-option -g message-fg white
-set-option -g message-bg black
-set-option -g message-attr bright
+# show hostname, date, time, and battery in right status bar
+set-option -g status-right '#(/usr/bin/battery -t)  | %H:%M %d/%m/%y'
 
-# # Refresh the status bar every 30 seconds.
+# Refresh the status bar every 30 seconds.
 set-option -g status-interval 30
+set-option -g display-time 1000
 
 # # The status bar itself.
 set -g status-justify centre
-set -g status-left-length 40
-set -g status-left "#[fg=#009900]Session: #S #[fg=yellow]#I #[fg=cyan]#P"
-set -g status-right "#[fg=cyan]#(~/battery Discharging) | #[fg=cyan]%d %b %R"
 
-set-option -g display-time 1000
+###########################
+# Colors
+###########################
+
+# set color for activity window
+set-window-option -g window-status-alert-bg colour235
+set-window-option -g window-status-alert-fg white
+
+# color status bar
+set -g status-bg colour235
+set -g status-fg white
+
+# highlight current window
+set-window-option -g window-status-current-fg black
+set-window-option -g window-status-current-bg green
+
+# set color of active pane
+set -g pane-border-fg colour235
+set -g pane-border-bg black
+set -g pane-active-border-fg green
+set -g pane-active-border-bg black
