@@ -33,6 +33,8 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'jgdavey/tslime.vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'jpalardy/vim-slime'
+Plugin 'pangloss/vim-javascript'
+Plugin 'elixir-lang/vim-elixir'
 
 " note-vim
 Plugin 'xolox/vim-notes'
@@ -50,9 +52,15 @@ colo seoul256
 
 syntax on
 
-set clipboard=unnamed 
-set mouse=a
 set iskeyword-=. " use dot for limiter word
+set clipboard=unnamed 
+set nocompatible
+set ttyfast " u got a fast terminal
+set ttyscroll=3
+set lazyredraw " to avoid scrolling problems
+set synmaxcol=80
+set mouse=nv
+set clipboard=exclude:.*
 set hidden
 set number
 set ts=2
@@ -60,7 +68,6 @@ set sw=2
 set autoindent
 set smartindent
 set expandtab
-set nocompatible
 set ignorecase
 set hlsearch
 set splitbelow " new splits are down
@@ -185,8 +192,9 @@ nmap <leader>+ <C-w>10+
 nmap <leader>- <C-w>10-
 
 nmap <leader>p :CtrlPBufTag<CR>
-" nmap <leader>hsh :%s/:\([^ ]*\)\(\s*\)=>/\1:/g
+nmap <leader>hsh :%s/:\([^ ]*\)\(\s*\)=>/\1:/g
 
+cabbrev CSScomb :!csscomb %:p<CR>
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
@@ -238,19 +246,7 @@ endif
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-
-autocmd! GUIEnter * set vb t_vb=
-augroup vimrcEx
-  au BufWinEnter,BufRead,BufNewFile Gemfile     set ft=ruby
-  au BufWinEnter,BufRead,BufNewFile Rakefile    set ft=ruby
-  au BufWinEnter,BufRead,BufNewFile Guardfile   set ft=ruby
-  au BufWinEnter,BufRead,BufNewFile Vagrantfile set ft=ruby
-  au BufWinEnter,BufRead,BufNewFile Thorfile    set ft=ruby
-  au BufWinEnter,BufRead,BufNewFile Gruntfile   set ft=javascript
-  au BufWinEnter,BufRead,BufNewFile *.fdoc      set ft=yaml
-  au BufWinEnter,BufRead,BufNewFile *.md        set ft=markdown
-  au BufWinEnter,BufRead,BufNewFile *.slim      set ft=slim
-augroup END
+autocmd FileType css        set omnifunc=csscomplete#CompleteCSS
 
 if exists('$TMUX')
   let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
@@ -263,3 +259,8 @@ endif
 if executable('zsh')
   set shell=zsh
 endif
+
+autocmd BufWritePost * set iskeyword-=.
+autocmd BufWritePost * set clipboard=unnamed
+set iskeyword-=. " use dot for limiter word
+set clipboard=unnamed 
