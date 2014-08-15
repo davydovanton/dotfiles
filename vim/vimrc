@@ -58,7 +58,7 @@ set nocompatible
 set ttyfast " u got a fast terminal
 set ttyscroll=3
 set lazyredraw " to avoid scrolling problems
-set synmaxcol=80
+set synmaxcol=140
 set mouse=nv
 set clipboard=exclude:.*
 set hidden
@@ -163,6 +163,10 @@ nnoremap j gj
 nnoremap k gk
 vnoremap j gj
 vnoremap k gk
+nnoremap gj j
+nnoremap gk k
+vnoremap gj j
+vnoremap gk k
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
@@ -192,10 +196,14 @@ nmap <leader>+ <C-w>10+
 nmap <leader>- <C-w>10-
 
 nmap <leader>p :CtrlPBufTag<CR>
-nmap <leader>hsh :%s/:\([^ ]*\)\(\s*\)=>/\1:/g
+nmap <leader>hh :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>
 
 cabbrev CSScomb :!csscomb %:p<CR>
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
+
+"" Open current line on GitHub
+" noremap ,o :!echo `git url`/blob/`git rev-parse --abbrev-ref HEAD`/%\#L<C-R>=line('.')<CR> \| xargs open<CR><CR>
+
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
