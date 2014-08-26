@@ -9,7 +9,6 @@ Plugin 'bling/vim-airline'
 Plugin 'corntrace/bufexplorer'
 Plugin 'dockyard/vim-easydir'
 Plugin 'elzr/vim-json'
-Plugin 'fisadev/vim-ctrlp-cmdpalette'
 Plugin 'garbas/vim-snipmate'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'gorodinskiy/vim-coloresque'
@@ -23,7 +22,6 @@ Plugin 'slim-template/vim-slim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tomtom/tlib_vim.git'
 Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-pathogen'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
@@ -35,10 +33,7 @@ Plugin 'thoughtbot/vim-rspec'
 Plugin 'jpalardy/vim-slime'
 Plugin 'pangloss/vim-javascript'
 Plugin 'elixir-lang/vim-elixir'
-
-" note-vim
-Plugin 'xolox/vim-notes'
-Plugin 'xolox/vim-misc'
+Plugin 'tpope/vim-rsi'
 call vundle#end()            " required
 filetype plugin indent on
 
@@ -58,7 +53,7 @@ set nocompatible
 set ttyfast " u got a fast terminal
 set ttyscroll=3
 set lazyredraw " to avoid scrolling problems
-set synmaxcol=140
+set synmaxcol=200
 set mouse=nv
 set clipboard=exclude:.*
 set hidden

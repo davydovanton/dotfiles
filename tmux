@@ -29,7 +29,7 @@ bind -n C-\ run "(tmux display-message -p '#{pane_current_command}' | grep -iqE 
 set-option -g status-utf8 on
 
 # TODO: to blog
-#supposedly fixes pausing in vim
+# supposedly fixes pausing in vim
 set-option -sg escape-time 1
 
 set-window-option -g mode-mouse on
@@ -53,7 +53,7 @@ bind p paste-buffer
 bind-key -t vi-copy 'v' begin-selection
 bind-key -t vi-copy 'y' copy-selection
 
-# # act like GNU screen
+# act like GNU screen
 unbind C-b
 set -g prefix C-a
 # Allow C-A a to send C-A to application
@@ -63,12 +63,12 @@ bind r source-file ~/.tmux.conf \; display-message "Config reloaded."
 # Reload key
 bind r source-file ~/.tmux.conf
 
-# # look good
+# look good
 set-option -g default-terminal "screen-256color-bce"
 set -g history-limit 5000
 setw -g xterm-keys on
 
-# # Rebinding the pane splitting bindings
+# Rebinding the pane splitting bindings
 # unbind % # Remove default bindings since we're replacing
 bind | split-window -h
 bind - split-window -v
@@ -79,7 +79,7 @@ unbind n
 bind v send-keys " ~/tmux-panes -h" C-m
 bind n send-keys " ~/tmux-panes -v" C-m
 
-# # Set window notifications
+# Set window notifications
 setw -g monitor-activity on
 set -g visual-activity on
 
@@ -120,6 +120,10 @@ set -g status-left '#[fg=green]#S#[fg=blue] #I:#P'
 
 # show hostname, date, time, and battery in right status bar
 set-option -g status-right '#(/usr/bin/battery -t)  | %H:%M %d/%m/%y'
+
+# wm window title string (uses statusbar variables)
+set -g set-titles-string "tmux.#I.#W"
+set-window-option -g automatic-rename off
 
 # Refresh the status bar every 30 seconds.
 set-option -g status-interval 30
