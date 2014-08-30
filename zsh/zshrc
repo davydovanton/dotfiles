@@ -54,6 +54,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+gdmbs() { git branch --merged | ag '^[^*].+' | awk '{print "git branch -d "$1}' | sh && git fetch -p }
+
 export PATH="/opt/local/bin:/opt/local/sbin:/Users/anton/.rvm/gems/ruby-2.0.0-p247/bin:/Users/anton/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/anton/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/anton/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 

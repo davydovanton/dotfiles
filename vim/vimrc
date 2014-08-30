@@ -150,8 +150,7 @@ map <Leader>sa :call RunAllSpecs()<CR>
 nmap <space> <leader>
 nmap <leader>n :noh<CR>
 
-nmap <F2>   :NERDTree<cr>
-nmap <S-F2> :NERDTreeFind<cr>
+nmap <F2>   :NERDTreeToggle<cr>
 nmap <F3>   :TagbarToggle<CR>
 
 nnoremap j gj
