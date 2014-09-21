@@ -436,7 +436,7 @@
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 293 924 485 0 0 1280 778 </string>
+	<string>269 293 605 485 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1280 800 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -1904,13 +1904,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-07-25T12:49:34Z</date>
+	<date>2014-09-03T16:18:49Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
