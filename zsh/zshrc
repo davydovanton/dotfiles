@@ -68,6 +68,11 @@ share_file_with_protected() {
   gpg -c "$file" && curl -F "file=@$file" http://curl.io/send/aghrldqv
 }
 
+gclone() {
+  git clone $1
+  ~/bin/dotfiles/scripts/init_git_repo.sh
+}
+
 export PATH="/opt/local/bin:/opt/local/sbin:/Users/anton/.rvm/gems/ruby-2.0.0-p247/bin:/Users/anton/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/anton/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/anton/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 

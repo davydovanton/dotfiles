@@ -16,6 +16,8 @@ cd dotfiles
 
 CURRENT_DIR=`pwd`
 
+ln -sf $CURRENT_DIR/git/git_template ~/.git_template
+
 ln -sf $CURRENT_DIR/vim ~/.vim
 ln -sf $CURRENT_DIR/vim/vimrc ~/.vimrc
 ln -sf $CURRENT_DIR/vim/gvimrc ~/.gvimrc
