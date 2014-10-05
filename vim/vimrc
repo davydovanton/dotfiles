@@ -3,45 +3,65 @@ filetype off                  " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'MarcWeber/vim-addon-mw-utils.git'
-Plugin 'Yggdroot/indentLine'
-Plugin 'bling/vim-airline'
-Plugin 'corntrace/bufexplorer'
-Plugin 'dockyard/vim-easydir'
-Plugin 'elzr/vim-json'
-Plugin 'garbas/vim-snipmate'
-Plugin 'gmarik/Vundle.vim'
-Plugin 'gorodinskiy/vim-coloresque'
-Plugin 'kien/ctrlp.vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'powerman/vim-plugin-ruscmd'
-Plugin 'rking/ag.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'slim-template/vim-slim'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'tomtom/tlib_vim.git'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-surround'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'vim-scripts/tComment'
-Plugin 'junegunn/seoul256.vim'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'jgdavey/tslime.vim'
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'jpalardy/vim-slime'
-Plugin 'pangloss/vim-javascript'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'tpope/vim-rsi'
+  " Main group
+  Plugin 'gmarik/Vundle.vim'
+  Plugin 'scrooloose/nerdtree'
+  Plugin 'scrooloose/syntastic'
+  Plugin 'vim-scripts/tComment'
+  Plugin 'kien/ctrlp.vim'
+  Plugin 'Yggdroot/indentLine'
+  Plugin 'bling/vim-airline'
+  Plugin 'corntrace/bufexplorer'
+  Plugin 'dockyard/vim-easydir'
+  Plugin 'powerman/vim-plugin-ruscmd'
+  Plugin 'rking/ag.vim'
+  Plugin 'terryma/vim-multiple-cursors'
+  Plugin 'MarcWeber/vim-addon-mw-utils.git'
+  Plugin 'elzr/vim-json'
+  Plugin 'garbas/vim-snipmate'
+  Plugin 'gorodinskiy/vim-coloresque'
+  Plugin 'majutsushi/tagbar'
+  Plugin 'tomtom/tlib_vim.git'
+  Plugin 'tpope/vim-surround'
+  Plugin 'tpope/vim-rsi'
+  Plugin 'bruno-/vim-husk'
+
+  " Vim text objects
+  Plugin 'kana/vim-textobj-user'
+  Plugin 'whatyouhide/vim-textobj-erb'
+
+  " Color schemes
+  Plugin 'junegunn/seoul256.vim'
+
+  " Ruby group
+  Plugin 'vim-ruby/vim-ruby'
+  Plugin 'tpope/vim-rails'
+  Plugin 'slim-template/vim-slim'
+  Plugin 'tpope/vim-endwise'
+  Plugin 'thoughtbot/vim-rspec'
+
+  " tmux group
+  Plugin 'christoomey/vim-tmux-navigator'
+  Plugin 'jgdavey/tslime.vim'
+  Plugin 'jpalardy/vim-slime'
+
+  " js group
+  Plugin 'pangloss/vim-javascript'
+
+  " elexir group
+  Plugin 'elixir-lang/vim-elixir'
+
+  " test plugin functionality
+  Plugin 'justinmk/vim-gtfo'
+
 call vundle#end()            " required
 filetype plugin indent on
 
 set tags=.git/tags
 set guifont=Droid\ Sans\ Mono\ 12
 let g:tube_terminal = "iterm"
+let g:gtfo#terminals = { 'mac' : 'iterm' }
 
-" colorscheme railscasts
 let g:seoul256_background = 236
 colo seoul256
 

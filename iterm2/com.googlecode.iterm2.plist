@@ -411,7 +411,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Documents</string>
+	<string>~</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -436,9 +436,9 @@
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 293 605 485 0 0 1280 800 </string>
+	<string>269 273 924 485 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1280 800 0 0 1280 778 </string>
+	<string>0 4 1277 774 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 38 1277 740 0 0 1280 800 </string>
 	<key>New Bookmarks</key>
@@ -1136,7 +1136,7 @@
 			<key>Visual Bell</key>
 			<false/>
 			<key>Window Type</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>Working Directory</key>
 			<string>/Users/anton</string>
 		</dict>
@@ -1904,7 +1904,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-09-03T16:18:49Z</date>
+	<date>2014-09-22T13:20:14Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
