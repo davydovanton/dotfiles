@@ -429,16 +429,16 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>302</string>
+		<string>319</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 273 924 485 0 0 1280 778 </string>
+	<string>269 273 924 485 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 4 1277 774 0 0 1280 778 </string>
+	<string>0 0 1280 800 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 38 1277 740 0 0 1280 800 </string>
 	<key>New Bookmarks</key>
@@ -637,7 +637,7 @@
 			<key>Columns</key>
 			<integer>80</integer>
 			<key>Command</key>
-			<string></string>
+			<string>login shell "/usr/bin/login -f anton"</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1904,7 +1904,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-09-22T13:20:14Z</date>
+	<date>2014-10-26T07:17:42Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1940,7 +1940,7 @@
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
-	<string>Lucida Grande</string>
+	<string>.Helvetica Neue DeskInterface</string>
 	<key>WindowNumber</key>
 	<false/>
 	<key>WindowStyle</key>

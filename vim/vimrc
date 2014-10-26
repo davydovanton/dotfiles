@@ -39,6 +39,7 @@ call vundle#begin()
   Plugin 'slim-template/vim-slim'
   Plugin 'tpope/vim-endwise'
   Plugin 'thoughtbot/vim-rspec'
+  Plugin 'danchoi/ri.vim'
 
   " tmux group
   Plugin 'christoomey/vim-tmux-navigator'
@@ -51,8 +52,11 @@ call vundle#begin()
   " elexir group
   Plugin 'elixir-lang/vim-elixir'
 
+  " haskell group
+  Plugin 'eagletmt/neco-ghc'
+  Plugin 'eagletmt/ghcmod-vim'
+
   " test plugin functionality
-  Plugin 'justinmk/vim-gtfo'
 
 call vundle#end()            " required
 filetype plugin indent on
@@ -160,13 +164,6 @@ let g:vimrubocop_config = '~/.rubocop.yml'
 " vim-slime
 let g:slime_target = "tmux"
 
-" vim rspec 
-let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
-map <Leader>sf :call RunCurrentSpecFile()<CR>
-map <Leader>sc :call RunNearestSpec()<CR>
-map <Leader>sl :call RunLastSpec()<CR>
-map <Leader>sa :call RunAllSpecs()<CR>
-
 nmap <space> <leader>
 nmap <leader>n :noh<CR>
 
@@ -211,6 +208,8 @@ nmap <leader>- <C-w>10-
 
 nmap <leader>p :CtrlPBufTag<CR>
 nmap <leader>hh :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>
+nmap <leader>;  :%s:::g<Left><Left><Left>
+nmap <leader>;; :%s:::g<Left><Left>
 
 cabbrev CSScomb :!csscomb %:p<CR>
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))

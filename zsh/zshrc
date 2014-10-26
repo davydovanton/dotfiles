@@ -1,4 +1,4 @@
-export LC_ALL=en_US.UTF-8  
+export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -40,7 +40,7 @@ DISABLE_CORRECTION="true"
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Uncomment following line if you want to  shown in the command execution time stamp 
+# Uncomment following line if you want to  shown in the command execution time stamp
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
 # yyyy-mm-dd
 # HIST_STAMPS="mm/dd/yyyy"
@@ -54,16 +54,17 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# scripts
 gdmbs() {
   git branch --merged | ag '^[^*].+' | awk '{print "git branch -d "$1}' | sh && git fetch -p
 }
 
-share_file() { 
+share_file() {
   file=$1
   curl -F "file=@$file" http://curl.io/send/jnbvugmk
 }
 
-share_file_with_protected() { 
+share_file_with_protected() {
   file=$1
   gpg -c "$file" && curl -F "file=@$file" http://curl.io/send/aghrldqv
 }
@@ -72,6 +73,12 @@ gclone() {
   git clone $1
   ~/bin/dotfiles/scripts/init_git_repo.sh
 }
+
+magic_shell() {
+  j=0;a=1;x=1;y=1;xd=1;yd=1;while true;do for i in {1..2000} ; do if [[ $x == $LINES || $x == 0 ]]; then xd=$(( $xd *-1 )) ; fi ; if [[ $y == $COLUMNS || $y == 0 ]]; then yd=$(( $yd * -1 )) ; fi ; x=$(( $x + $xd )); y=$(( $y + $yd )); printf "\33[%s;%sH\33[48;5;%sm . \33[0m" $x $y $(( $a % 8 + 16 + $j % 223 )) ;a=$(( $a + 1 )) ; done ; x=$(( x%$COLUMNS + 1 )) ; j=$(( $j + 8 )) ;done
+}
+
+# User commands
 
 export PATH="/opt/local/bin:/opt/local/sbin:/Users/anton/.rvm/gems/ruby-2.0.0-p247/bin:/Users/anton/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/anton/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/anton/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
