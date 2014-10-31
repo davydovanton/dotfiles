@@ -116,7 +116,7 @@ set -g status-justify left
 
 # show session, window, pane in left status bar
 set -g status-left-length 40
-set -g status-left '#[fg=green]#S#[fg=blue] #I:#P'
+set -g status-left '#S #I:#P'
 
 # show hostname, date, time, and battery in right status bar
 set-option -g status-right '#(/usr/bin/battery -t)  | %H:%M %d/%m/%y'
@@ -145,7 +145,7 @@ set -g message-fg white
 
 # highlight current window
 setw -g window-status-current-fg black
-setw -g window-status-current-bg green
+setw -g window-status-current-bg blue
 
 setw -g window-status-fg white 
 setw -g window-status-bg colour235
@@ -153,5 +153,5 @@ setw -g window-status-bg colour235
 # set color of active pane
 set -g pane-border-fg colour235
 set -g pane-border-bg black
-set -g pane-active-border-fg green
+set -g pane-active-border-fg blue
 set -g pane-active-border-bg black

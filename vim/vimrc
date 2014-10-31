@@ -32,6 +32,8 @@ call vundle#begin()
 
   " Color schemes
   Plugin 'junegunn/seoul256.vim'
+  Plugin 'davydovanton/strange'
+  Plugin 'cocopon/iceberg.vim'
 
   " Ruby group
   Plugin 'vim-ruby/vim-ruby'
@@ -64,10 +66,11 @@ filetype plugin indent on
 set tags=.git/tags
 set guifont=Droid\ Sans\ Mono\ 12
 let g:tube_terminal = "iterm"
-let g:gtfo#terminals = { 'mac' : 'iterm' }
 
 let g:seoul256_background = 236
 colo seoul256
+" colo strange
+colo iceberg
 
 syntax on
 
@@ -136,9 +139,7 @@ let g:airline_fugitive_prefix = '⎇ '
 let g:airline_paste_symbol = 'ρ'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#branch#empty_message = ''
-let g:airline#extensions#ctrlp#color_template = 'normal'
-let g:airline#extensions#ctrlp#color_template = 'visual'
-let g:airline#extensions#ctrlp#color_template = 'replace'
+let g:airline_theme = 'lucius'
 
 let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
