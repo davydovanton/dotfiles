@@ -30,6 +30,251 @@
 	<true/>
 	<key>Custom Color Presets</key>
 	<dict>
+		<key>Iceberg</key>
+		<dict>
+			<key>ANSIBlackColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPECkwLjA4NjI3NDUxMjExIDAu
+			MDkwMTk2MDgwNTEgMC4xMzMzMzMzNDAzABACgALSEBESE1okY2xh
+			c3NuYW1lWCRjbGFzc2VzV05TQ29sb3KiEhRYTlNPYmplY3RfEA9O
+			U0tleWVkQXJjaGl2ZXLRFxhUcm9vdIABCBEaIy0yNztBSE5bYo6Q
+			kpeiq7O2v9HU2QAAAAAAAAEBAAAAAAAAABkAAAAAAAAAAAAAAAAA
+			AADb
+			</data>
+			<key>ANSIBlueColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPECcwLjUxNzY0NzA1ODggMC42
+			Mjc0NTA5ODA0IDAuNzc2NDcwNTg4MgAQAoAC0hAREhNaJGNsYXNz
+			bmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNL
+			ZXllZEFyY2hpdmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCV
+			oKmxtL3P0tcAAAAAAAABAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAA
+			2Q==
+			</data>
+			<key>ANSIBrightBlackColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPEBMwLjIxNDIgMC4yMTQyIDAu
+			MzQAEAKAAtIQERITWiRjbGFzc25hbWVYJGNsYXNzZXNXTlNDb2xv
+			cqISFFhOU09iamVjdF8QD05TS2V5ZWRBcmNoaXZlctEXGFRyb290
+			gAEIERojLTI3O0FITltieHp8gYyVnaCpu77DAAAAAAAAAQEAAAAA
+			AAAAGQAAAAAAAAAAAAAAAAAAAMU=
+			</data>
+			<key>ANSIBrightBlueColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPEBkwLjY0MDggMC43NDQ2MzMz
+			MzMzIDAuODkAEAKAAtIQERITWiRjbGFzc25hbWVYJGNsYXNzZXNX
+			TlNDb2xvcqISFFhOU09iamVjdF8QD05TS2V5ZWRBcmNoaXZlctEX
+			GFRyb290gAEIERojLTI3O0FITltifoCCh5Kbo6avwcTJAAAAAAAA
+			AQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAMs=
+			</data>
+			<key>ANSIBrightCyanColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPEBQwLjcxMzQgMC44NDY1MSAw
+			Ljg3ABACgALSEBESE1okY2xhc3NuYW1lWCRjbGFzc2VzV05TQ29s
+			b3KiEhRYTlNPYmplY3RfEA9OU0tleWVkQXJjaGl2ZXLRFxhUcm9v
+			dIABCBEaIy0yNztBSE5bYnl7fYKNlp6hqry/xAAAAAAAAAEBAAAA
+			AAAAABkAAAAAAAAAAAAAAAAAAADG
+			</data>
+			<key>ANSIBrightGreenColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPEBQwLjgwMTk1IDAuODYgMC42
+			Mjc4ABACgALSEBESE1okY2xhc3NuYW1lWCRjbGFzc2VzV05TQ29s
+			b3KiEhRYTlNPYmplY3RfEA9OU0tleWVkQXJjaGl2ZXLRFxhUcm9v
+			dIABCBEaIy0yNztBSE5bYnl7fYKNlp6hqry/xAAAAAAAAAEBAAAA
+			AAAAABkAAAAAAAAAAAAAAAAAAADG
+			</data>
+			<key>ANSIBrightMagentaColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPEBIwLjc4MzQ1IDAuNzExIDAu
+			OQAQAoAC0hAREhNaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9y
+			ohIUWE5TT2JqZWN0XxAPTlNLZXllZEFyY2hpdmVy0RcYVHJvb3SA
+			AQgRGiMtMjc7QUhOW2J3eXuAi5Scn6i6vcIAAAAAAAABAQAAAAAA
+			AAAZAAAAAAAAAAAAAAAAAAAAxA==
+			</data>
+			<key>ANSIBrightRedColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPEBIwLjk1IDAuNjA4IDAuNjE5
+			NAAQAoAC0hAREhNaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9y
+			ohIUWE5TT2JqZWN0XxAPTlNLZXllZEFyY2hpdmVy0RcYVHJvb3SA
+			AQgRGiMtMjc7QUhOW2J3eXuAi5Scn6i6vcIAAAAAAAABAQAAAAAA
+			AAAZAAAAAAAAAAAAAAAAAAAAxA==
+			</data>
+			<key>ANSIBrightWhiteColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPEBIwLjkxMiAwLjkyMDggMC45
+			NgAQAoAC0hAREhNaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9y
+			ohIUWE5TT2JqZWN0XxAPTlNLZXllZEFyY2hpdmVy0RcYVHJvb3SA
+			AQgRGiMtMjc7QUhOW2J3eXuAi5Scn6i6vcIAAAAAAAABAQAAAAAA
+			AAAZAAAAAAAAAAAAAAAAAAAAxA==
+			</data>
+			<key>ANSIBrightYellowColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPEBQwLjkzIDAuNzQ1NTUgMC42
+			MTM4ABACgALSEBESE1okY2xhc3NuYW1lWCRjbGFzc2VzV05TQ29s
+			b3KiEhRYTlNPYmplY3RfEA9OU0tleWVkQXJjaGl2ZXLRFxhUcm9v
+			dIABCBEaIy0yNztBSE5bYnl7fYKNlp6hqry/xAAAAAAAAAEBAAAA
+			AAAAABkAAAAAAAAAAAAAAAAAAADG
+			</data>
+			<key>ANSICyanColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPECYwLjUzNzI1NDkwMiAwLjcy
+			MTU2ODYyNzUgMC43NjA3ODQzMTM3ABACgALSEBESE1okY2xhc3Nu
+			YW1lWCRjbGFzc2VzV05TQ29sb3KiEhRYTlNPYmplY3RfEA9OU0tl
+			eWVkQXJjaGl2ZXLRFxhUcm9vdIABCBEaIy0yNztBSE5bYouNj5Sf
+			qLCzvM7R1gAAAAAAAAEBAAAAAAAAABkAAAAAAAAAAAAAAAAAAADY
+			</data>
+			<key>ANSIGreenColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPECcwLjcwNTg4MjM1MjkgMC43
+			NDUwOTgwMzkyIDAuNTA5ODAzOTIxNgAQAoAC0hAREhNaJGNsYXNz
+			bmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNL
+			ZXllZEFyY2hpdmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCV
+			oKmxtL3P0tcAAAAAAAABAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAA
+			2Q==
+			</data>
+			<key>ANSIMagentaColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPECcwLjYyNzQ1MDk4MDQgMC41
+			NzY0NzA1ODgyIDAuNzgwMzkyMTU2OQAQAoAC0hAREhNaJGNsYXNz
+			bmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNL
+			ZXllZEFyY2hpdmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCV
+			oKmxtL3P0tcAAAAAAAABAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAA
+			2Q==
+			</data>
+			<key>ANSIRedColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPECcwLjg4NjI3NDUwOTggMC40
+			NzA1ODgyMzUzIDAuNDcwNTg4MjM1MwAQAoAC0hAREhNaJGNsYXNz
+			bmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNL
+			ZXllZEFyY2hpdmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCV
+			oKmxtL3P0tcAAAAAAAABAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAA
+			2Q==
+			</data>
+			<key>ANSIWhiteColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPECcwLjgxNTY4NjM0NTEgMC44
+			MjM1Mjk0ODE5IDAuODU4ODIzNTk3NAAQAoAC0hAREhNaJGNsYXNz
+			bmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNL
+			ZXllZEFyY2hpdmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCV
+			oKmxtL3P0tcAAAAAAAABAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAA
+			2Q==
+			</data>
+			<key>ANSIYellowColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPECcwLjg4NjI3NDUwOTggMC42
+			NDMxMzcyNTQ5IDAuNDcwNTg4MjM1MwAQAoAC0hAREhNaJGNsYXNz
+			bmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNL
+			ZXllZEFyY2hpdmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCV
+			oKmxtL3P0tcAAAAAAAABAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAA
+			2Q==
+			</data>
+			<key>BackgroundBlur</key>
+			<real>0.19588955965909091</real>
+			<key>BackgroundColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPEC8wLjA2OTExNTMxODM2IDAu
+			MDczMzU1NDEzOTcgMC4wOTgwNzI4NTY2NiAwLjk1ABABgALSEBES
+			E1okY2xhc3NuYW1lWCRjbGFzc2VzV05TQ29sb3KiEhRYTlNPYmpl
+			Y3RfEA9OU0tleWVkQXJjaGl2ZXLRFxhUcm9vdIABCBEaIy0yNztB
+			SE5bYpSWmJ2osbm8xdfa3wAAAAAAAAEBAAAAAAAAABkAAAAAAAAA
+			AAAAAAAAAADh
+			</data>
+			<key>CursorColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPECcwLjgxNTY4NjM0NTEgMC44
+			MjM1Mjk0ODE5IDAuODU4ODIzNTk3NAAQAoAC0hAREhNaJGNsYXNz
+			bmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNL
+			ZXllZEFyY2hpdmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCV
+			oKmxtL3P0tcAAAAAAAABAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAA
+			2Q==
+			</data>
+			<key>Font</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGGBlYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKQHCBESVSRudWxs1AkKCwwNDg8QVk5T
+			U2l6ZVhOU2ZGbGFnc1ZOU05hbWVWJGNsYXNzI0AmAAAAAAAAEBCA
+			AoADXxAVU291cmNlQ29kZVByby1SZWd1bGFy0hMUFRZaJGNsYXNz
+			bmFtZVgkY2xhc3Nlc1ZOU0ZvbnSiFRdYTlNPYmplY3RfEA9OU0tl
+			eWVkQXJjaGl2ZXLRGhtUcm9vdIABCBEaIy0yNzxCS1JbYmlydHZ4
+			kJWgqbCzvM7R1gAAAAAAAAEBAAAAAAAAABwAAAAAAAAAAAAAAAAA
+			AADY
+			</data>
+			<key>Linewrap</key>
+			<true/>
+			<key>ProfileCurrentVersion</key>
+			<real>2.02</real>
+			<key>SelectionColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPECYwLjE1Mjk0MTE4MjMgMC4x
+			NjA3ODQzMTkgMC4yNjY2NjY2ODA2ABACgALSEBESE1okY2xhc3Nu
+			YW1lWCRjbGFzc2VzV05TQ29sb3KiEhRYTlNPYmplY3RfEA9OU0tl
+			eWVkQXJjaGl2ZXLRFxhUcm9vdIABCBEaIy0yNztBSE5bYouNj5Sf
+			qLCzvM7R1gAAAAAAAAEBAAAAAAAAABkAAAAAAAAAAAAAAAAAAADY
+			</data>
+			<key>TextBoldColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPECcwLjgxNTY4NjM0NTEgMC44
+			MjM1Mjk0ODE5IDAuODU4ODIzNTk3NAAQAoAC0hAREhNaJGNsYXNz
+			bmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNL
+			ZXllZEFyY2hpdmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCV
+			oKmxtL3P0tcAAAAAAAABAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAA
+			2Q==
+			</data>
+			<key>TextColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdC
+			XE5TQ29sb3JTcGFjZVYkY2xhc3NPECcwLjc3NjQ3MDU4ODIgMC43
+			ODQzMTM3MjU1IDAuODE5NjA3ODQzMQAQAYAC0hAREhNaJGNsYXNz
+			bmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNL
+			ZXllZEFyY2hpdmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCV
+			oKmxtL3P0tcAAAAAAAABAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAA
+			2Q==
+			</data>
+			<key>name</key>
+			<string>Iceberg</string>
+			<key>type</key>
+			<string>Window Settings</string>
+		</dict>
 		<key>new_seul256</key>
 		<dict>
 			<key>Ansi 0 Color</key>
@@ -410,8 +655,10 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
+	<key>NSColorPanelMode</key>
+	<string>6</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~</string>
+	<string>~/bin/dotfiles/iterm2</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -435,8 +682,13 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 273 924 485 0 0 1280 800 </string>
+	<string>461 292 924 485 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1280 800 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -462,11 +714,11 @@
 			<key>Ansi 1 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.22055299580097198</real>
+				<real>0.37254902720451355</real>
 				<key>Green Component</key>
-				<real>0.23406368494033813</real>
+				<real>0.37254902720451355</real>
 				<key>Red Component</key>
-				<real>0.72970873117446899</real>
+				<real>0.99607843160629272</real>
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
@@ -525,11 +777,11 @@
 			<key>Ansi 2 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.3756447434425354</real>
+				<real>0.52941179275512695</real>
 				<key>Green Component</key>
-				<real>0.52839154005050659</real>
+				<real>0.84313726425170898</real>
 				<key>Red Component</key>
-				<real>0.36508485674858093</real>
+				<real>0.69019609689712524</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
@@ -543,11 +795,11 @@
 			<key>Ansi 4 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.83449238538742065</real>
+				<real>0.84313726425170898</real>
 				<key>Green Component</key>
-				<real>0.68919539451599121</real>
+				<real>0.68627452850341797</real>
 				<key>Red Component</key>
-				<real>0.53378462791442871</real>
+				<real>0.52941179275512695</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -561,20 +813,20 @@
 			<key>Ansi 6 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.67317330837249756</real>
+				<real>0.69019609689712524</real>
 				<key>Green Component</key>
-				<real>0.68789660930633545</real>
+				<real>0.68627452850341797</real>
 				<key>Red Component</key>
-				<real>0.38178431987762451</real>
+				<real>0.52941179275512695</real>
 			</dict>
 			<key>Ansi 7 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.79284101724624634</real>
+				<real>0.81568628549575806</real>
 				<key>Green Component</key>
-				<real>0.81206071376800537</real>
+				<real>0.81568628549575806</real>
 				<key>Red Component</key>
-				<real>0.81617259979248047</real>
+				<real>0.81568628549575806</real>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
@@ -601,11 +853,11 @@
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.089119061827659607</real>
+				<real>0.10980392247438431</real>
 				<key>Green Component</key>
-				<real>0.086658857762813568</real>
+				<real>0.10980392247438431</real>
 				<key>Red Component</key>
-				<real>0.088978216052055359</real>
+				<real>0.10980392247438431</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -986,11 +1238,11 @@
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.7764706015586853</real>
+				<real>0.18823529779911041</real>
 				<key>Green Component</key>
-				<real>0.78431373834609985</real>
+				<real>0.18823529779911041</real>
 				<key>Red Component</key>
-				<real>0.77254903316497803</real>
+				<real>0.18823529779911041</real>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
@@ -1904,7 +2156,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-10-26T07:17:42Z</date>
+	<date>2014-11-06T20:47:43Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1952,6 +2204,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.0</string>
+	<string>2.0.0.20141022</string>
 </dict>
 </plist>

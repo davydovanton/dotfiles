@@ -1,3 +1,19 @@
+# List of plugins
+# Supports `github_username/repo` or full git URLs
+set -g @tpm_plugins "              \
+  tmux-plugins/tpm                 \
+  tmux-plugins/tmux-sensible       \
+  tmux-plugins/tmux-online-status  \
+"
+# Other examples:
+# github_username/plugin_name    \
+# git@github.com/user/plugin     \
+# git@bitbucket.com/user/plugin  \
+
+# Initializes TMUX plugin manager.
+# Keep this line at the very bottom of tmux.conf.
+run-shell ~/.tmux/plugins/tpm/tpm
+
 # TODO: to blog
 set-option -g default-command "reattach-to-user-namespace -l $SHELL"
 
@@ -118,8 +134,13 @@ set -g status-justify left
 set -g status-left-length 40
 set -g status-left '#S #I:#P'
 
+# https://github.com/tmux-plugins/tmux-online-status#configure-icons 
+set -g status-interval 30
+set -g @online_icon "on"
+set -g @offline_icon "off"
+
 # show hostname, date, time, and battery in right status bar
-set-option -g status-right '#(/usr/bin/battery -t)  | %H:%M %d/%m/%y'
+set-option -g status-right '#(/usr/bin/battery -t) | %H:%M %d/%m/%y#(/usr/bin/online-status -t)'
 
 # wm window title string (uses statusbar variables)
 set -g set-titles-string "tmux.#I.#W"

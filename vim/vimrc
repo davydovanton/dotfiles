@@ -123,8 +123,6 @@ set encoding=utf-8
 set fileencoding=utf-8
 language mes en_US.UTF-8
 
-let g:notes_directories = ['~/Dropbox/Data/VimNotes']
-
 let g:ruby_path = system('rvm current')
 
 let g:airline#extensions#tabline#enabled = 1
@@ -218,7 +216,6 @@ cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W')
 "" Open current line on GitHub
 " noremap ,o :!echo `git url`/blob/`git rev-parse --abbrev-ref HEAD`/%\#L<C-R>=line('.')<CR> \| xargs open<CR><CR>
 
-
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
   " Use Ag over Grep
@@ -263,6 +260,7 @@ if has("autocmd")
   filetype on
   " Treat .json files as .js
   autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+  autocmd BufNewFile,BufRead *.md set filetype=markdown
 endif
 
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
