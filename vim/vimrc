@@ -61,7 +61,22 @@ call vundle#begin()
   " test plugin functionality
 
 call vundle#end()            " required
-filetype plugin indent on
+" Load plugins and indentation for file types
+if has('autocmd')
+  filetype indent plugin on
+
+  " Shortcuts to quickly switch to common file types; handy when using
+  " editing abstractions like sudoedit(8)
+  nnoremap _cs :setlocal filetype=css<CR>
+  nnoremap _ht :setlocal filetype=html<CR>
+  nnoremap _sl :setlocal filetype=slim<CR>
+  nnoremap _js :setlocal filetype=javascript<CR>
+  nnoremap _md :setlocal filetype=markdown<CR>
+  nnoremap _py :setlocal filetype=python<CR>
+  nnoremap _rb :setlocal filetype=ruby<CR>
+  nnoremap _sh :setlocal filetype=sh<CR>
+  nnoremap _vi :setlocal filetype=vim<CR>
+endif
 
 set tags=.git/tags
 set guifont=Droid\ Sans\ Mono\ 12
@@ -121,6 +136,19 @@ set guioptions-=rL
 set langmenu=en_US.UTF-8
 set encoding=utf-8
 set fileencoding=utf-8
+set shm+=I                     " Startup message is irritating 
+set dictionary=/usr/share/dict/words
+
+" Time out on key codes but not mappings.
+" Basically this makes terminal Vim work sanely.
+set notimeout
+set ttimeout
+set ttimeoutlen=10
+
+if executable('zsh')
+  set shell=zsh
+endif
+
 language mes en_US.UTF-8
 
 let g:ruby_path = system('rvm current')
@@ -157,8 +185,7 @@ let g:surround_{char2nr('|')} = "|\r|"
 let g:syntastic_enable_signs = 1
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
-
-let g:vimrubocop_config = '~/.rubocop.yml'
+let g:syntastic_disabled_filetypes = ['html', 'slim', 'erb']
 
 " vim-slime
 let g:slime_target = "tmux"
@@ -166,6 +193,7 @@ let g:slime_target = "tmux"
 nmap <space> <leader>
 nmap <leader>n :noh<CR>
 
+nnoremap <F1> <nop>
 nmap <F2>   :NERDTreeToggle<cr>
 nmap <F3>   :TagbarToggle<CR>
 
@@ -197,6 +225,9 @@ nnoremap tl  :tablast<CR>
 nnoremap td  :tabclose<CR>
 nnoremap tn  :tabnew<CR>
 
+nnoremap Q <nop>
+nnoremap K <nop>
+
 nmap <leader>o o<ESC>
 nmap <leader>O O<ESC>j
 
@@ -209,6 +240,8 @@ nmap <leader>p :CtrlPBufTag<CR>
 nmap <leader>hh :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>
 nmap <leader>;  :%s:::g<Left><Left><Left>
 nmap <leader>;; :%s:::g<Left><Left>
+
+iabbrev ldis ಠ_ಠ
 
 cabbrev CSScomb :!csscomb %:p<CR>
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
@@ -277,11 +310,8 @@ else
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
 
-if executable('zsh')
-  set shell=zsh
-endif
-
 autocmd BufWritePost * set iskeyword-=.
 autocmd BufWritePost * set clipboard=unnamed
 set iskeyword-=. " use dot for limiter word
 set clipboard=unnamed 
+
