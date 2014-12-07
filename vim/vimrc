@@ -59,6 +59,7 @@ call vundle#begin()
   Plugin 'eagletmt/ghcmod-vim'
 
   " test plugin functionality
+  Plugin 'tpope/vim-repeat'
 
 call vundle#end()            " required
 " Load plugins and indentation for file types
