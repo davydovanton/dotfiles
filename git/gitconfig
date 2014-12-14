@@ -1,6 +1,6 @@
 [user]
 	name = Anton Davydov
-	email = don.mist@gmail.com
+	email = antondavydov.o@gmail.com
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim

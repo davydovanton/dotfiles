@@ -60,6 +60,7 @@ call vundle#begin()
 
   " test plugin functionality
   Plugin 'tpope/vim-repeat'
+  Plugin 'fweep/vim-zsh-path-completion'
 
 call vundle#end()            " required
 " Load plugins and indentation for file types
