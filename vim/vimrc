@@ -60,7 +60,6 @@ call vundle#begin()
 
   " test plugin functionality
   Plugin 'tpope/vim-repeat'
-  Plugin 'fweep/vim-zsh-path-completion'
 
 call vundle#end()            " required
 " Load plugins and indentation for file types
@@ -78,6 +77,11 @@ if has('autocmd')
   nnoremap _rb :setlocal filetype=ruby<CR>
   nnoremap _sh :setlocal filetype=sh<CR>
   nnoremap _vi :setlocal filetype=vim<CR>
+endif
+" Use relative line numbers
+if exists("&relativenumber")
+	set relativenumber
+	au BufReadPost * set relativenumber
 endif
 
 set tags=.git/tags
