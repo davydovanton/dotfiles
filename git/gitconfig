@@ -21,11 +21,16 @@
 [help]
 	autocorrect = 1
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 	ctags = !~/.git_template/hooks/ctag\n\n
   commit-rnd = !sh -c "git commit -m '$(curl -s http://whatthecommit.com/index.txt)'"
 [init]
 	templatedir = ~/.git_template
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
