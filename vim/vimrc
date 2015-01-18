@@ -197,8 +197,8 @@ nmap <space> <leader>
 nmap <leader>n :noh<CR>
 
 nnoremap <F1> <nop>
-nmap <F2>   :NERDTreeToggle<cr>
-nmap <F3>   :TagbarToggle<CR>
+nmap <F2> :NERDTreeToggle<cr>
+nmap <F3> :TagbarToggle<CR>
 
 nnoremap j gj
 nnoremap k gk
@@ -221,12 +221,12 @@ nnoremap <s-tab> <<
 vnoremap <tab> >
 vnoremap <s-tab> <
 
-nnoremap th  :tabfirst<CR>
-nnoremap tj  :tabprev<CR>
-nnoremap tk  :tabnext<CR>
-nnoremap tl  :tablast<CR>
-nnoremap td  :tabclose<CR>
-nnoremap tn  :tabnew<CR>
+nnoremap th :tabfirst<CR>
+nnoremap tj :tabprev<CR>
+nnoremap tk :tabnext<CR>
+nnoremap tl :tablast<CR>
+nnoremap td :tabclose<CR>
+nnoremap tn :tabnew<CR>
 
 nnoremap Q <nop>
 nnoremap K <nop>
@@ -239,7 +239,7 @@ nmap <leader>> <C-w>10>
 nmap <leader>+ <C-w>10+
 nmap <leader>- <C-w>10-
 
-nmap <leader>p :CtrlPBufTag<CR>
+nmap <leader>p  :CtrlPBufTag<CR>
 nmap <leader>hh :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>
 nmap <leader>;  :%s:::g<Left><Left><Left>
 nmap <leader>;; :%s:::g<Left><Left>
