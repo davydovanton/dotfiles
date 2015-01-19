@@ -21,6 +21,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-rsi'
   Plug 'bruno-/vim-husk'
+  Plug 'tpope/vim-repeat'
   
   " Vim text objects
   Plug 'kana/vim-textobj-user'
@@ -53,10 +54,11 @@ call plug#begin('~/.vim/plugged')
   " haskell group
   Plug 'eagletmt/neco-ghc'
   Plug 'eagletmt/ghcmod-vim'
+
+  " statistic
+  Plug 'wakatime/vim-wakatime'
   
   " test plugin functionality
-  Plug 'tpope/vim-repeat'
-  Plug 'wakatime/vim-wakatime'
   
 call plug#end()
 " Load plugins and indentation for file types
