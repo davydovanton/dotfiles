@@ -195,6 +195,9 @@ let g:syntastic_disabled_filetypes = ['html', 'slim', 'erb']
 " vim-slime
 let g:slime_target = "tmux"
 
+" Disable Ex mode
+map Q <Nop>
+
 nmap <space> <leader>
 nmap <leader>n :noh<CR>
 
@@ -292,6 +295,18 @@ function! StripWhitespace()
 endfunction
 noremap <leader>ss :call StripWhitespace()<CR>
 
+" rename current file (thanks Gary Bernhardt)
+function! RenameFile()
+    let old_name = expand('%')
+    let new_name = input('New file name: ', expand('%'), 'file')
+    if new_name != '' && new_name != old_name
+        exec ':saveas ' . new_name
+        exec ':silent !rm ' . old_name
+        redraw!
+    endif
+endfunction
+command! RENAME call RenameFile()
+
 " Automatic commands
 if has("autocmd")
   " Enable file type detection
@@ -307,6 +322,9 @@ autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType css        set omnifunc=csscomplete#CompleteCSS
 autocmd Filetype gitcommit  setlocal spell textwidth=72
 
+" Turn on spell-checking in markdown and text.
+" au BufRead,BufNewFile *.md,*.txt setlocal spell
+
 if exists('$TMUX')
   let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
   let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
@@ -319,4 +337,3 @@ autocmd BufWritePost * set iskeyword-=.
 autocmd BufWritePost * set clipboard=unnamed
 set iskeyword-=. " use dot for limiter word
 set clipboard=unnamed 
-
