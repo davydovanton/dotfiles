@@ -22,16 +22,16 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-rsi'
   Plug 'bruno-/vim-husk'
   Plug 'tpope/vim-repeat'
-  
+
   " Vim text objects
   Plug 'kana/vim-textobj-user'
   Plug 'whatyouhide/vim-textobj-erb'
-  
+
   " Color schemes
   Plug 'junegunn/seoul256.vim'
   Plug 'davydovanton/strange'
   Plug 'cocopon/iceberg.vim'
-  
+
   " Ruby group
   Plug 'vim-ruby/vim-ruby'
   Plug 'tpope/vim-rails'
@@ -39,27 +39,27 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-endwise'
   Plug 'thoughtbot/vim-rspec'
   Plug 'danchoi/ri.vim'
-  
+
   " tmux group
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'jgdavey/tslime.vim'
   Plug 'jpalardy/vim-slime'
-  
+
   " js group
   Plug 'pangloss/vim-javascript'
-  
+
   " elexir group
   Plug 'elixir-lang/vim-elixir'
-  
+
   " haskell group
   Plug 'eagletmt/neco-ghc'
   Plug 'eagletmt/ghcmod-vim'
 
   " statistic
   Plug 'wakatime/vim-wakatime'
-  
+
   " test plugin functionality
-  
+
 call plug#end()
 " Load plugins and indentation for file types
 if has('autocmd')
@@ -95,7 +95,7 @@ colo iceberg
 syntax on
 
 set iskeyword-=. " use dot for limiter word
-set clipboard=unnamed 
+set clipboard=unnamed
 set nocompatible
 set ttyfast " u got a fast terminal
 set ttyscroll=3
@@ -141,7 +141,7 @@ set guioptions-=rL
 set langmenu=en_US.UTF-8
 set encoding=utf-8
 set fileencoding=utf-8
-set shm+=I                     " Startup message is irritating 
+set shm+=I                     " Startup message is irritating
 set dictionary=/usr/share/dict/words
 
 " Time out on key codes but not mappings.
@@ -336,4 +336,4 @@ endif
 autocmd BufWritePost * set iskeyword-=.
 autocmd BufWritePost * set clipboard=unnamed
 set iskeyword-=. " use dot for limiter word
-set clipboard=unnamed 
+set clipboard=unnamed
