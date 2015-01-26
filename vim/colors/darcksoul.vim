@@ -66,7 +66,7 @@ hi! Type ctermfg=NONE gui=NONE guifg=#c6c8d1
 hi! Underlined cterm=underline ctermfg=110 gui=underline guifg=#c6c8d1 term=underline
 hi! VertSplit ctermbg=237 ctermfg=233 guibg=#0f1117 guifg=#0f1117
 hi! Visual ctermbg=237 guibg=#272c42
-hi! WildMenu ctermbg=NONE ctermfg=234 guibg=#d4d5db guifg=#17171b
+hi! WildMenu ctermbg=238 ctermfg=234 guibg=#d4d5db guifg=#17171b
 hi! diffAdded ctermfg=150 guifg=#c6c8d1
 hi! diffRemoved ctermfg=203 guifg=#c6c8d1
 

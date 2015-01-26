@@ -59,6 +59,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'wakatime/vim-wakatime'
 
   " test plugin functionality
+  Plug 'jbgutierrez/vim-partial'
 
 call plug#end()
 " Load plugins and indentation for file types
@@ -250,6 +251,9 @@ nmap <leader>p  :CtrlPBufTag<CR>
 nmap <leader>hh :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>
 nmap <leader>;  :%s:::g<Left><Left><Left>
 nmap <leader>;; :%s:::g<Left><Left>
+
+" vim-partial
+vmap <Leader>x :PartialExtract<cr>
 
 iabbrev ldis ಠ_ಠ
 
