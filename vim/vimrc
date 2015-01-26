@@ -199,6 +199,8 @@ let g:slime_target = "tmux"
 map Q <Nop>
 
 nmap <space> <leader>
+vmap <space> <leader>
+
 nmap <leader>n :noh<CR>
 
 nnoremap <F1> <nop>
