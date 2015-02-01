@@ -1,67 +1,73 @@
 set nocompatible              " be improved, required
 filetype off                  " required
 
-call plug#begin('~/.vim/plugged')
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
   " Main group
-  Plug 'gmarik/Vundle.vim'
-  Plug 'scrooloose/nerdtree'
-  Plug 'scrooloose/syntastic'
-  Plug 'vim-scripts/tComment'
-  Plug 'kien/ctrlp.vim'
-  Plug 'Yggdroot/indentLine'
-  Plug 'bling/vim-airline'
-  Plug 'corntrace/bufexplorer'
-  Plug 'dockyard/vim-easydir'
-  Plug 'powerman/vim-plugin-ruscmd'
-  Plug 'rking/ag.vim'
-  Plug 'terryma/vim-multiple-cursors'
-  Plug 'elzr/vim-json'
-  Plug 'gorodinskiy/vim-coloresque'
-  Plug 'majutsushi/tagbar'
-  Plug 'tpope/vim-surround'
-  Plug 'tpope/vim-rsi'
-  Plug 'bruno-/vim-husk'
-  Plug 'tpope/vim-repeat'
+  Plugin 'gmarik/Vundle.vim'
+
+  Plugin 'scrooloose/nerdtree'
+  Plugin 'kien/ctrlp.vim'
+  Plugin 'bling/vim-airline'
+  Plugin 'corntrace/bufexplorer'
+  Plugin 'dockyard/vim-easydir'
+  Plugin 'scrooloose/syntastic'
+  Plugin 'vim-scripts/tComment'
+  Plugin 'Yggdroot/indentLine'
+  Plugin 'powerman/vim-plugin-ruscmd'
+  Plugin 'rking/ag.vim'
+  Plugin 'terryma/vim-multiple-cursors'
+  Plugin 'elzr/vim-json'
+  Plugin 'gorodinskiy/vim-coloresque'
+  Plugin 'majutsushi/tagbar'
+  Plugin 'tpope/vim-surround'
+  Plugin 'tpope/vim-rsi'
+  Plugin 'bruno-/vim-husk'
+  Plugin 'tpope/vim-repeat'
+  Plugin 'jbgutierrez/vim-partial'
+
+  Bundle "MarcWeber/vim-addon-mw-utils"
+  Bundle "tomtom/tlib_vim"
+  Bundle "garbas/vim-snipmate"
 
   " Vim text objects
-  Plug 'kana/vim-textobj-user'
-  Plug 'whatyouhide/vim-textobj-erb'
+  Plugin 'kana/vim-textobj-user'
+  Plugin 'whatyouhide/vim-textobj-erb'
 
   " Color schemes
-  Plug 'junegunn/seoul256.vim'
-  Plug 'davydovanton/strange'
-  Plug 'cocopon/iceberg.vim'
+  Plugin 'junegunn/seoul256.vim'
+  Plugin 'davydovanton/strange'
+  Plugin 'cocopon/iceberg.vim'
 
   " Ruby group
-  Plug 'vim-ruby/vim-ruby'
-  Plug 'tpope/vim-rails'
-  Plug 'slim-template/vim-slim'
-  Plug 'tpope/vim-endwise'
-  Plug 'thoughtbot/vim-rspec'
-  Plug 'danchoi/ri.vim'
+  Plugin 'vim-ruby/vim-ruby'
+  Plugin 'tpope/vim-rails'
+  Plugin 'slim-template/vim-slim'
+  Plugin 'tpope/vim-endwise'
+  Plugin 'thoughtbot/vim-rspec'
+  Plugin 'danchoi/ri.vim'
 
   " tmux group
-  Plug 'christoomey/vim-tmux-navigator'
-  Plug 'jgdavey/tslime.vim'
-  Plug 'jpalardy/vim-slime'
+  Plugin 'christoomey/vim-tmux-navigator'
+  Plugin 'jgdavey/tslime.vim'
+  Plugin 'jpalardy/vim-slime'
 
   " js group
-  Plug 'pangloss/vim-javascript'
+  Plugin 'pangloss/vim-javascript'
 
   " elexir group
-  Plug 'elixir-lang/vim-elixir'
+  Plugin 'elixir-lang/vim-elixir'
 
   " haskell group
-  Plug 'eagletmt/neco-ghc'
-  Plug 'eagletmt/ghcmod-vim'
+  Plugin 'eagletmt/neco-ghc'
+  Plugin 'eagletmt/ghcmod-vim'
 
   " statistic
-  Plug 'wakatime/vim-wakatime'
+  Plugin 'wakatime/vim-wakatime'
 
   " test plugin functionality
-  Plug 'jbgutierrez/vim-partial'
 
-call plug#end()
+call vundle#end()
 " Load plugins and indentation for file types
 if has('autocmd')
   filetype indent plugin on
