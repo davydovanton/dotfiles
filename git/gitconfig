@@ -2,7 +2,7 @@
 	name = Anton Davydov
 	email = antondavydov.o@gmail.com
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/anton/.gitignore_global
 	editor = vim
 	pager = less -R
   whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
