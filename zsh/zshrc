@@ -55,6 +55,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # scripts
+# git delete local and remote merged branchs
 gdmbs() {
   git branch --merged | ag '^[^*].+' | awk '{print "git branch -d "$1}' | sh && git fetch -p
 }
