@@ -70,11 +70,6 @@ share_file_with_protected() {
   gpg -c "$file" && curl -F "file=@$file" http://curl.io/send/aghrldqv
 }
 
-gclone() {
-  git clone $1
-  ~/bin/dotfiles/scripts/init_git_repo.sh
-}
-
 magic_shell() {
   j=0;a=1;x=1;y=1;xd=1;yd=1;while true;do for i in {1..2000} ; do if [[ $x == $LINES || $x == 0 ]]; then xd=$(( $xd *-1 )) ; fi ; if [[ $y == $COLUMNS || $y == 0 ]]; then yd=$(( $yd * -1 )) ; fi ; x=$(( $x + $xd )); y=$(( $y + $yd )); printf "\33[%s;%sH\33[48;5;%sm . \33[0m" $x $y $(( $a % 8 + 16 + $j % 223 )) ;a=$(( $a + 1 )) ; done ; x=$(( x%$COLUMNS + 1 )) ; j=$(( $j + 8 )) ;done
 }
@@ -83,11 +78,8 @@ magic_shell() {
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="/opt/local/bin:/opt/local/sbin:/Users/anton/.rvm/gems/ruby-2.0.0-p247/bin:/Users/anton/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/anton/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/anton/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin"
 
-# # Preferred editor for local and remote sessions
+# Preferred editor for local and remote sessions
 export EDITOR='vim'
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
