@@ -261,8 +261,6 @@ nmap <leader>;; :%s:::g<Left><Left>
 " vim-partial
 vmap <Leader>x :PartialExtract<cr>
 
-iabbrev ldis ಠ_ಠ
-
 cabbrev CSScomb :!csscomb %:p<CR>
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
 
