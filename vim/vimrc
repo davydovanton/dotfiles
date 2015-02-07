@@ -73,6 +73,7 @@ call vundle#begin()
   " test plugin functionality
 
 call vundle#end()
+
 " Load plugins and indentation for file types
 if has('autocmd')
   filetype indent plugin on
@@ -89,22 +90,21 @@ if has('autocmd')
   nnoremap _sh :setlocal filetype=sh<CR>
   nnoremap _vi :setlocal filetype=vim<CR>
 endif
+
+" Color Scheme
+set guifont=Droid\ Sans\ Mono\ 12
+let g:seoul256_background = 236
+colo iceberg
+
 " Use relative line numbers
 if exists("&relativenumber")
 	set relativenumber
 	au BufReadPost * set relativenumber
 endif
 
-set tags=.git/tags
-set guifont=Droid\ Sans\ Mono\ 12
-let g:tube_terminal = "iterm"
-
-let g:seoul256_background = 236
-colo seoul256
-" colo strange
-colo iceberg
-
 syntax on
+
+set tags=.git/tags
 
 set iskeyword-=. " use dot for limiter word
 set clipboard=unnamed
@@ -167,6 +167,8 @@ if executable('zsh')
 endif
 
 language mes en_US.UTF-8
+
+let g:tube_terminal = "iterm"
 
 let g:ruby_path = system('rvm current')
 
@@ -250,7 +252,7 @@ nnoremap tn :tabnew<CR>
 nnoremap Q <nop>
 nnoremap K <nop>
 
-nmap <leader>o o<ESC>
+nmap <leader>o o<ESC>k
 nmap <leader>O O<ESC>j
 
 nmap <leader>< <C-w>10<
@@ -260,6 +262,8 @@ nmap <leader>- <C-w>10-
 
 nmap <leader>p  :CtrlPBufTag<CR>
 nmap <leader>hh :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>
+
+" Replace mapping
 nmap <leader>;  :%s:::g<Left><Left><Left>
 nmap <leader>;; :%s:::g<Left><Left>
 
@@ -268,9 +272,6 @@ vmap <Leader>x :PartialExtract<cr>
 
 cabbrev CSScomb :!csscomb %:p<CR>
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
-
-"" Open current line on GitHub
-" noremap ,o :!echo `git url`/blob/`git rev-parse --abbrev-ref HEAD`/%\#L<C-R>=line('.')<CR> \| xargs open<CR><CR>
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
