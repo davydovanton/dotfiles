@@ -351,5 +351,6 @@ endif
 
 autocmd BufWritePost * set iskeyword-=.
 autocmd BufWritePost * set clipboard=unnamed
+
 set iskeyword-=. " use dot for limiter word
 set clipboard=unnamed
