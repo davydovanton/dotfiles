@@ -31,4 +31,4 @@
 [difftool]
 	prompt = false
 [web]
-    browser = google-chrome
+  browser = google-chrome
