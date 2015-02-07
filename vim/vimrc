@@ -3,54 +3,59 @@ filetype off                  " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-  " Main group
   Plugin 'gmarik/Vundle.vim'
 
-  Plugin 'scrooloose/nerdtree'
-  Plugin 'kien/ctrlp.vim'
-  Plugin 'bling/vim-airline'
-  Plugin 'corntrace/bufexplorer'
-  Plugin 'dockyard/vim-easydir'
-  Plugin 'scrooloose/syntastic'
-  Plugin 'vim-scripts/tComment'
+  " Main group
   Plugin 'Yggdroot/indentLine'
-  Plugin 'powerman/vim-plugin-ruscmd'
-  Plugin 'rking/ag.vim'
-  Plugin 'terryma/vim-multiple-cursors'
-  Plugin 'elzr/vim-json'
+  Plugin 'bling/vim-airline'
   Plugin 'gorodinskiy/vim-coloresque'
-  Plugin 'majutsushi/tagbar'
-  Plugin 'tpope/vim-surround'
-  Plugin 'tpope/vim-rsi'
   Plugin 'bruno-/vim-husk'
+  Plugin 'terryma/vim-multiple-cursors'
+  Plugin 'powerman/vim-plugin-ruscmd'
   Plugin 'tpope/vim-repeat'
-  Plugin 'jbgutierrez/vim-partial'
+  Plugin 'tpope/vim-surround'
 
-  Bundle "MarcWeber/vim-addon-mw-utils"
-  Bundle "tomtom/tlib_vim"
-  Bundle "garbas/vim-snipmate"
+  " Navigation
+  Plugin 'rking/ag.vim'
+  Plugin 'corntrace/bufexplorer'
+  Plugin 'kien/ctrlp.vim'
+  Plugin 'dockyard/vim-easydir'
+  Plugin 'scrooloose/nerdtree'
+
+  " Snippets
+  Bundle 'tomtom/tlib_vim'
+  Bundle 'MarcWeber/vim-addon-mw-utils'
+  Bundle 'garbas/vim-snipmate'
+
+  " Programming
+  Plugin 'scrooloose/syntastic'
+  Plugin 'majutsushi/tagbar'
+  Plugin 'vim-scripts/tComment'
+  Plugin 'jbgutierrez/vim-partial'
+  Plugin 'tpope/vim-rsi'
+  Plugin 'elzr/vim-json'
 
   " Vim text objects
-  Plugin 'kana/vim-textobj-user'
   Plugin 'whatyouhide/vim-textobj-erb'
+  Plugin 'kana/vim-textobj-user'
 
   " Color schemes
+  Plugin 'cocopon/iceberg.vim'
   Plugin 'junegunn/seoul256.vim'
   Plugin 'davydovanton/strange'
-  Plugin 'cocopon/iceberg.vim'
 
   " Ruby group
-  Plugin 'vim-ruby/vim-ruby'
-  Plugin 'tpope/vim-rails'
-  Plugin 'slim-template/vim-slim'
   Plugin 'tpope/vim-endwise'
-  Plugin 'thoughtbot/vim-rspec'
+  Plugin 'slim-template/vim-slim'
   Plugin 'danchoi/ri.vim'
+  Plugin 'tpope/vim-rails'
+  Plugin 'vim-ruby/vim-ruby'
+  Plugin 'thoughtbot/vim-rspec'
 
   " tmux group
-  Plugin 'christoomey/vim-tmux-navigator'
   Plugin 'jgdavey/tslime.vim'
   Plugin 'jpalardy/vim-slime'
+  Plugin 'christoomey/vim-tmux-navigator'
 
   " js group
   Plugin 'pangloss/vim-javascript'
@@ -59,8 +64,8 @@ call vundle#begin()
   Plugin 'elixir-lang/vim-elixir'
 
   " haskell group
-  Plugin 'eagletmt/neco-ghc'
   Plugin 'eagletmt/ghcmod-vim'
+  Plugin 'eagletmt/neco-ghc'
 
   " statistic
   Plugin 'wakatime/vim-wakatime'
