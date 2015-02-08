@@ -1,5 +1,5 @@
-set nocompatible              " be improved, required
-filetype off                  " required
+set nocompatible " be improved, required
+filetype off     " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -29,7 +29,6 @@ call vundle#begin()
 
   " Programming
   Plugin 'scrooloose/syntastic'
-  Plugin 'majutsushi/tagbar'
   Plugin 'vim-scripts/tComment'
   Plugin 'jbgutierrez/vim-partial'
   Plugin 'tpope/vim-rsi'
@@ -108,13 +107,11 @@ set tags=.git/tags
 
 set iskeyword-=. " use dot for limiter word
 set clipboard=unnamed
-set nocompatible
 set ttyfast " u got a fast terminal
 set ttyscroll=3
 set lazyredraw " to avoid scrolling problems
 set synmaxcol=200
 set mouse=nv
-set clipboard=exclude:.*
 set hidden
 set number
 set ts=2
@@ -130,17 +127,14 @@ set smartcase
 set incsearch
 set laststatus=2
 set visualbell
-set title
 set showcmd
 set pastetoggle=
 set iminsert=0
 set linebreak
 set completeopt=longest,menuone
-set relativenumber
 set wildmenu
 set noerrorbells
 set novisualbell
-set t_vb=
 set t_vb=
 set t_ut=
 set tm=500
@@ -148,8 +142,6 @@ set nobackup
 set nowb
 set noswapfile
 set timeoutlen=500
-set lazyredraw
-set guioptions-=rL
 set langmenu=en_US.UTF-8
 set encoding=utf-8
 set fileencoding=utf-8
@@ -174,7 +166,6 @@ let g:ruby_path = system('rvm current')
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
-let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#tabline#left_sep = '|'
 let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -207,7 +198,7 @@ let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_disabled_filetypes = ['html', 'slim', 'erb']
 
 " vim-slime
-let g:slime_target = "tmux"
+let g:slime_target = 'tmux'
 
 " Disable Ex mode
 map Q <Nop>
@@ -273,14 +264,15 @@ vmap <Leader>x :PartialExtract<cr>
 cabbrev CSScomb :!csscomb %:p<CR>
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
 
+" bind K to grep word under cursor
+nnoremap <leader>f :grep! "\b<C-R><C-W>\b" --ignore-dir log<CR>:cw<CR>
+
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
   " Use Ag over Grep
   set grepprg=ag\ --nogroup\ --nocolor
-
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 else
@@ -288,8 +280,6 @@ else
   let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
 endif
-" bind K to grep word under cursor
-nnoremap <leader>f :grep! "\b<C-R><C-W>\b" --ignore-dir log<CR>:cw<CR>
 
 function! ClearRegisters()
   let regs='abcdefghijklmnopqrstuvwxyz0123456789'
