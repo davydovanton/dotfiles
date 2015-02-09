@@ -246,7 +246,7 @@ nnoremap tn :tabnew<CR>
 nnoremap Q <nop>
 nnoremap K <nop>
 
-nmap <leader>o o<ESC>k
+nmap <leader>o o<ESC>
 nmap <leader>O O<ESC>j
 
 nmap <leader>< <C-w>10<
