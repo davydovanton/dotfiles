@@ -70,7 +70,6 @@ call vundle#begin()
   Plugin 'wakatime/vim-wakatime'
 
   " test plugin functionality
-  Plugin 'dhruvasagar/vim-dotoo'
 
 call vundle#end()
 
