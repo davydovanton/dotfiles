@@ -93,6 +93,7 @@ endif
 " Color Scheme
 set guifont=Droid\ Sans\ Mono\ 12
 let g:seoul256_background = 236
+colo seoul256
 colo iceberg
 
 " Use relative line numbers
