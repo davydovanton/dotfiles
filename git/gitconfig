@@ -28,5 +28,3 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
-[web]
-  browser = google-chrome
