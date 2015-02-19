@@ -1,9 +1,7 @@
 # encoding: utf-8
 require 'rubygems'
-require 'irb/completion'
 require 'wirble'
 require 'interactive_editor'
-require 'pry'
 
 IRB.conf[:SAVE_HISTORY] = 1000
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
@@ -11,7 +9,3 @@ IRB.conf[:PROMPT_MODE] = :SIMPLE
 
 Wirble.init
 Wirble.colorize
-
-def copy(str)
-  IO.popen('pbcopy', 'w') { |f| f << str.to_s }
-end
