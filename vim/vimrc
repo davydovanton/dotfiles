@@ -70,6 +70,7 @@ call vundle#begin()
   Plugin 'wakatime/vim-wakatime'
 
   " test plugin functionality
+  Plugin 'mtth/scratch.vim'
 
 call vundle#end()
 
