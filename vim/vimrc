@@ -46,7 +46,6 @@ call vundle#begin()
   " Ruby group
   Plugin 'tpope/vim-endwise'
   Plugin 'slim-template/vim-slim'
-  Plugin 'danchoi/ri.vim'
   Plugin 'tpope/vim-rails'
   Plugin 'vim-ruby/vim-ruby'
   Plugin 'thoughtbot/vim-rspec'
