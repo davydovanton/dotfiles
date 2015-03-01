@@ -35,8 +35,6 @@ call vundle#begin()
   Plugin 'elzr/vim-json'
 
   " Vim text objects
-  Plugin 'whatyouhide/vim-textobj-erb'
-  Plugin 'kana/vim-textobj-user'
 
   " Color schemes
   Plugin 'cocopon/iceberg.vim'
