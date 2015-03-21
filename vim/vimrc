@@ -47,6 +47,7 @@ call vundle#begin()
   Plugin 'tpope/vim-rails'
   Plugin 'vim-ruby/vim-ruby'
   Plugin 'thoughtbot/vim-rspec'
+  Plugin 'sunaku/vim-ruby-minitest'
 
   " tmux group
   Plugin 'jgdavey/tslime.vim'
