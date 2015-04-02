@@ -1,10 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/anton/work/job/storytut/app/controllers'
-let g:netrw_dirhist_2='/Users/anton/work/job/storytut'
-let g:netrw_dirhist_3='/Users/anton/work/job/storytut/.vagrant'
-let g:netrw_dirhist_4='/Users/anton/work/job/storytut/.vagrant/machines'
-let g:netrw_dirhist_5='/Users/anton/work/job/storytut/.vagrant'
-let g:netrw_dirhist_6='/Users/anton/work/job/storytut'
-let g:netrw_dirhist_7='/Users/anton/work/job/storytut/app'
-let g:netrw_dirhist_8='/Users/anton/work/job/storytut/app/controllers'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/anton/work/gems/sidekiq'
