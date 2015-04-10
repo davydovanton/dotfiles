@@ -1,3 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =2
 let g:netrw_dirhist_1='/Users/anton/work/gems/sidekiq'
+let g:netrw_dirhist_2='/Users/anton/.rvm/gems/ruby-2.2.0/gems/redis-3.2.1'
