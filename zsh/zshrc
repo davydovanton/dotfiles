@@ -89,10 +89,6 @@ export EDITOR='vim'
 # System:
 alias 'vbox-restart=sudo /Library/StartupItems/VirtualBox/VirtualBox restart'
 
-# Radio:
-alias 'radio-rock-fm=mplayer http://mp3.nashe.ru/rock-128.mp3 -msgcolor'
-alias 'radio-transe=mplayer http://62.210.125.247:8090/stream -msgcolor'
-
 # Git alias
 alias gcl='git clone'
 alias grb='git rebase'
