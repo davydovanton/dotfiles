@@ -82,7 +82,6 @@ if has('autocmd')
   nnoremap _sl :setlocal filetype=slim<CR>
   nnoremap _js :setlocal filetype=javascript<CR>
   nnoremap _md :setlocal filetype=markdown<CR>
-  nnoremap _py :setlocal filetype=python<CR>
   nnoremap _rb :setlocal filetype=ruby<CR>
   nnoremap _sh :setlocal filetype=sh<CR>
   nnoremap _vi :setlocal filetype=vim<CR>
