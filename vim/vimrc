@@ -39,7 +39,7 @@ call vundle#begin()
   " Color schemes
   Plugin 'cocopon/iceberg.vim'
   Plugin 'junegunn/seoul256.vim'
-  Plugin 'davydovanton/strange'
+  " Plugin 'davydovanton/strange'
 
   " Ruby group
   Plugin 'tpope/vim-endwise'
@@ -68,6 +68,8 @@ call vundle#begin()
   Plugin 'wakatime/vim-wakatime'
 
   " test plugin functionality
+  Plugin 'tpope/vim-fugitive'
+  Plugin 'AndrewRadev/undoquit.vim'
 
 call vundle#end()
 
@@ -106,7 +108,7 @@ set tags=.git/tags
 set iskeyword-=. " use dot for limiter word
 set clipboard=unnamed
 set ttyfast " u got a fast terminal
-set ttyscroll=3
+" set ttyscroll=3
 set lazyredraw " to avoid scrolling problems
 set synmaxcol=200
 set mouse=nv
