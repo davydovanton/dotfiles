@@ -52,7 +52,6 @@ call vundle#begin()
   " tmux group
   Plugin 'jgdavey/tslime.vim'
   Plugin 'jpalardy/vim-slime'
-  Plugin 'christoomey/vim-tmux-navigator'
 
   " js group
   Plugin 'pangloss/vim-javascript'
@@ -225,9 +224,9 @@ vnoremap gj j
 vnoremap gk k
 
 " Quicker window movement
+nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
 " experimental mappings------------
