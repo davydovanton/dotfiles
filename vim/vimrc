@@ -333,8 +333,11 @@ autocmd Filetype gitcommit  setlocal spell textwidth=72
 " Turn on spell-checking in markdown and text.
 " au BufRead,BufNewFile *.md,*.txt setlocal spell
 
+" Neovim confixg
 if has('nvim')
   let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+  tnoremap <Esc> <c-\><c-n>
+  tnoremap <C-[> <c-\><c-n>
 endif
 
 if exists('$TMUX')
