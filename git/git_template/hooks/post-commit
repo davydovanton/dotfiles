@@ -16,6 +16,11 @@ call_rubocop() {
     rubocop $file | tail -n +4 | sed '$d'
 }
 
+call_spellcheker() {
+    echo "\nCodespell:"
+    /Users/anton/bin/codespell/codespell.py $file
+}
+
 analyse_for_ruby_file() {
   ruby_file='^.+\.rb$'
   test_or_config_file='^(spec|test|config|db).+\.rb$'
@@ -37,6 +42,8 @@ files=`git diff-tree --no-commit-id --name-only -r HEAD`
 for file in $files
 do
   analyse_for_ruby_file $file
+  call_spellcheker $file
+  echo "\n"
 done
 
 /usr/local/bin/ctags -R *
