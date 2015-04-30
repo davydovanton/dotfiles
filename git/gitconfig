@@ -6,8 +6,6 @@
 	editor = nvim
 	pager = less -R
   whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 [color]
 	ui = 1
 [merge]
