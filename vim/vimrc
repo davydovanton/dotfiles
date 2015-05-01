@@ -68,7 +68,6 @@ call vundle#begin()
 
   " test plugin functionality
   Plugin 'tpope/vim-fugitive'
-  Plugin 'AndrewRadev/undoquit.vim'
 
 call vundle#end()
 
