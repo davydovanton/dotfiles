@@ -68,6 +68,7 @@ call vundle#begin()
 
   " test plugin functionality
   Plugin 'tpope/vim-fugitive'
+  Plugin 'gabesoft/vim-ags'
 
 call vundle#end()
 
@@ -106,7 +107,6 @@ set tags=.git/tags
 set iskeyword-=. " use dot for limiter word
 set clipboard=unnamed
 set ttyfast " u got a fast terminal
-" set ttyscroll=3
 set lazyredraw " to avoid scrolling problems
 set synmaxcol=200
 set mouse=nv
@@ -208,8 +208,6 @@ vmap <space> <leader>
 nmap <leader>n :noh<CR>
 
 nnoremap <F1> <nop>
-nmap <F2> :NERDTreeToggle<cr>
-nmap <F3> :TagbarToggle<CR>
 
 nnoremap j gj
 nnoremap k gk
