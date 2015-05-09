@@ -258,6 +258,9 @@ nmap <leader>;; :%s:::g<Left><Left>
 " vim-partial
 vmap <Leader>x :PartialExtract<cr>
 
+" NERDTree plugin
+nmap <F2> :NERDTree<cr>
+
 cabbrev CSScomb :!csscomb %:p<CR>
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
 
