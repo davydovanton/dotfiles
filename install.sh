@@ -22,6 +22,8 @@ ln -sf $CURRENT_DIR/vim ~/.vim
 ln -sf $CURRENT_DIR/vim/vimrc ~/.vimrc
 ln -sf $CURRENT_DIR/vim/gvimrc ~/.gvimrc
 
+ln -sf $CURRENT_DIR/emacs/emacsrc ~/.emacs
+
 curl -L http://install.ohmyz.sh | sh
 cp -sf $CURRENT_DIR/zsh/themes/excess.zsh-theme ~/.oh-my-zsh/themes/excess.zsh-theme
 ln -sf $CURRENT_DIR/zsh/zshrc ~/.zshrc

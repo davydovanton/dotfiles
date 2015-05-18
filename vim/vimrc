@@ -39,7 +39,7 @@ call vundle#begin()
   " Color schemes
   Plugin 'cocopon/iceberg.vim'
   Plugin 'junegunn/seoul256.vim'
-  " Plugin 'davydovanton/strange'
+  Plugin 'davydovanton/strange'
 
   " Ruby group
   Plugin 'tpope/vim-endwise'
