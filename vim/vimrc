@@ -196,6 +196,11 @@ let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_disabled_filetypes = ['html', 'slim', 'erb']
 
+" change log settings
+let g:changelog_dateformat = "%c"
+let g:changelog_timeformat = "%c"
+let g:changelog_username = "Anton Davydov, <antondavydov.o@gmail.com>"
+
 " vim-slime
 let g:slime_target = 'tmux'
 

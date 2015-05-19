@@ -1,0 +1,23 @@
+;; this loads the package manager
+(require 'package)
+
+;;; here there's a variable named package-archives, and we are adding the MELPA repository to it
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
+;;; loads packages and activates them
+(package-initialize)
+
+(require 'evil)
+(evil-mode t)
+
+;;; Hide top menu
+(menu-bar-mode -1)
+
+;; Changelog
+(setq user-mail-address "antondavydov.o@gmail.com") 
+
+;; Plugins
+(require 'tree-mode)
+(require 'windata)
+(require 'dirtree)
