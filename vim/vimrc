@@ -39,7 +39,6 @@ call vundle#begin()
   " Color schemes
   Plugin 'cocopon/iceberg.vim'
   Plugin 'junegunn/seoul256.vim'
-  Plugin 'davydovanton/strange'
 
   " Ruby group
   Plugin 'tpope/vim-endwise'
@@ -69,6 +68,7 @@ call vundle#begin()
   " test plugin functionality
   Plugin 'tpope/vim-fugitive'
   Plugin 'gabesoft/vim-ags'
+  " Plugin 'vim-scripts/gnuchangelog'
 
 call vundle#end()
 
