@@ -16,8 +16,3 @@
 
 ;; Changelog
 (setq user-mail-address "antondavydov.o@gmail.com") 
-
-;; Plugins
-(require 'tree-mode)
-(require 'windata)
-(require 'dirtree)
