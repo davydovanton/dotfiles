@@ -1,4 +1,3 @@
-# TODO: to blog
 set-option -g default-command "reattach-to-user-namespace -l $SHELL"
 
 # Setup 'v' to begin selection as in Vim
@@ -16,7 +15,6 @@ setw -g pane-base-index 1
 # sane scrolling
 # set-option -g terminal-overrides 'xterm*:smcup@:rmcup@'
 
-# TODO: to blog
 # vim-tmux-navigator plugin
 # Smart pane switching with awareness of vim splits
 bind -n C-h run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)g?(view|nvim|vim?)(diff)?$' && tmux send-keys C-h) || tmux select-pane -L"
@@ -28,7 +26,6 @@ bind -n C-\ run "(tmux display-message -p '#{pane_current_command}' | grep -iqE 
 # UTF-8
 set-option -g status-utf8 on
 
-# TODO: to blog
 # supposedly fixes pausing in vim
 set-option -sg escape-time 1
 
@@ -90,7 +87,6 @@ set-option -g visual-bell off
 set-option -g visual-activity off
 set-option -g visual-content off 
 # it's work!!! 
-# TODO: to blog
 setw -g monitor-activity off
 set -g visual-activity off
 
