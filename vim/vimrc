@@ -66,8 +66,6 @@ call vundle#begin()
   Plugin 'wakatime/vim-wakatime'
 
   " test plugin functionality
-  Plugin 'gabesoft/vim-ags'
-  " Plugin 'vim-scripts/gnuchangelog'
 
 call vundle#end()
 
