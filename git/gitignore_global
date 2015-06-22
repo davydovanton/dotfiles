@@ -8,11 +8,6 @@
 .Spotlight-V100
 .Trashes
 
-# Windows   taken from: https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
-# ----------------------------------------------------------------------------------------------
-# Windows image file caches
-Thumbs.db
-
 # Folder config file
 Desktop.ini
 
