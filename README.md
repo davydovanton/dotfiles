@@ -9,7 +9,7 @@ A lot of stuff. Seriously, a lot of stuff. Check them out in the file browser ab
 ## Including tools/programms
 * zsh
 * git
-* vim
+* nvim
 * tmux
 * ruby
 * iterm
