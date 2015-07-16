@@ -58,6 +58,9 @@ call vundle#begin()
   " elexir group
   Plugin 'elixir-lang/vim-elixir'
 
+  " crystal group
+  Plugin 'rhysd/vim-crystal'
+
   " haskell group
   Plugin 'eagletmt/ghcmod-vim'
   Plugin 'eagletmt/neco-ghc'
