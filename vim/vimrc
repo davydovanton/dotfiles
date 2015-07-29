@@ -105,6 +105,7 @@ syntax on
 set tags=.git/tags
 
 set iskeyword-=. " use dot for limiter word
+set iskeyword+=_
 set clipboard=unnamed
 set ttyfast " u got a fast terminal
 set lazyredraw " to avoid scrolling problems
@@ -355,4 +356,5 @@ autocmd BufWritePost * set iskeyword-=.
 autocmd BufWritePost * set clipboard=unnamed
 
 set iskeyword-=. " use dot for limiter word
+set iskeyword+=_
 set clipboard=unnamed
