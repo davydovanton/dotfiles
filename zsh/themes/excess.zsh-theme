@@ -1,12 +1,10 @@
 # excess.zsh-theme
 #
 # Author: Anton Davydov
-# URL: http://fikys.github.io/
+# URL: https://github.com/davydovanton
 #
 # Created on:    01.02.2014
 # Last modified on: 01.02.2014
-
-
 
 if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="green"; fi
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
