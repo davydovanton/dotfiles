@@ -309,13 +309,13 @@ noremap <leader>ss :call StripWhitespace()<CR>
 
 " rename current file (thanks Gary Bernhardt)
 function! RenameFile()
-    let old_name = expand('%')
-    let new_name = input('New file name: ', expand('%'), 'file')
-    if new_name != '' && new_name != old_name
-        exec ':saveas ' . new_name
-        exec ':silent !rm ' . old_name
-        redraw!
-    endif
+  let old_name = expand('%')
+  let new_name = input('New file name: ', expand('%'), 'file')
+  if new_name != '' && new_name != old_name
+    exec ':saveas ' . new_name
+    exec ':silent !rm ' . old_name
+    redraw!
+  endif
 endfunction
 command! RENAME call RenameFile()
 
@@ -354,7 +354,9 @@ endif
 
 autocmd BufWritePost * set iskeyword-=.
 autocmd BufWritePost * set clipboard=unnamed
+autocmd BufWritePost * set path+=**
 
 set iskeyword-=. " use dot for limiter word
 set iskeyword+=_
+set path+=**
 set clipboard=unnamed
