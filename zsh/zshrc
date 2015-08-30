@@ -95,3 +95,5 @@ alias 'vim=/usr/local/bin/vim'
 alias 'emacs=/usr/local/bin/emacs'
 alias 'zsh=/usr/local/bin/zsh'
 alias 'codespell=/Users/anton/bin/codespell/codespell.py'
+
+alias 'gsd=git icdiff '
