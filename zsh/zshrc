@@ -72,6 +72,9 @@ export PATH="/opt/local/bin:/opt/local/sbin:/Users/anton/.rvm/gems/ruby-2.0.0-p2
 export EDITOR='nvim'
 export TERM=xterm-256color
 
+# Update Java version
+export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
@@ -98,3 +101,4 @@ alias 'codespell=/Users/anton/bin/codespell/codespell.py'
 alias 'dumdumdum=say -v cellos "Dum dum dum dum dum dum dum he he he ho ho ho fa lah lah lah lah lah lah fa lah full hoo hoo hoo"'
 
 alias 'gsd=git icdiff '
+export PATH="/usr/local/bin:$PATH"
