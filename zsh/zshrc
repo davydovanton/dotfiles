@@ -98,7 +98,9 @@ alias 'vim=/usr/local/bin/vim'
 alias 'emacs=/usr/local/bin/emacs'
 alias 'zsh=/usr/local/bin/zsh'
 alias 'codespell=/Users/anton/bin/codespell/codespell.py'
+
+# Others
 alias 'dumdumdum=say -v cellos "Dum dum dum dum dum dum dum he he he ho ho ho fa lah lah lah lah lah lah fa lah full hoo hoo hoo"'
 
-alias 'gsd=git icdiff '
+alias 'gsd=git icdiff'
 export PATH="/usr/local/bin:$PATH"
