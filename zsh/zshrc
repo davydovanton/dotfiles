@@ -48,7 +48,7 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(virtualenv git vagrant bundler gem brew ruby heroku tmux rvm bower)
+plugins=(virtualenv git vagrant bundler gem brew ruby heroku tmux rvm bower lein)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -58,6 +58,12 @@ source $ZSH/oh-my-zsh.sh
 # git delete local and remote merged branchs
 gdmbs() {
   git branch --merged | ag '^[^*].+' | awk '{print "git branch -d "$1}' | sh && git fetch -p
+}
+
+# git delete branch by pattern
+#   gbdbp "^doc-.*"
+gbdbp() {
+  git branch  | cut -c3- | egrep $1 | xargs git branch -D
 }
 
 magic_shell() {
