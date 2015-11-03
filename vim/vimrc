@@ -75,6 +75,9 @@ call vundle#begin()
   " statistic
   Plugin 'wakatime/vim-wakatime'
 
+  " Racket group
+  Plugin 'wlangstroth/vim-racket'
+
   " test plugin functionality
 
 call vundle#end()
