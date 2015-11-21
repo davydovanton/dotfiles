@@ -215,6 +215,11 @@ let g:changelog_username = "Anton Davydov, <antondavydov.o@gmail.com>"
 " vim-slime
 let g:slime_target = 'tmux'
 
+" vim rspec
+let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
 " Disable Ex mode
 map Q <Nop>
 
