@@ -57,6 +57,9 @@ call vundle#begin()
   " elexir group
   Plugin 'elixir-lang/vim-elixir'
 
+  " coffee group
+  Plugin 'kchmck/vim-coffee-script'
+
   " crystal group
   Plugin 'rhysd/vim-crystal'
 
