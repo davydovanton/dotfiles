@@ -22,9 +22,9 @@ call vundle#begin()
   Plugin 'scrooloose/nerdtree'
 
   " Snippets
-  Bundle 'tomtom/tlib_vim'
-  Bundle 'MarcWeber/vim-addon-mw-utils'
-  Bundle 'garbas/vim-snipmate'
+  Plugin 'tomtom/tlib_vim'
+  Plugin 'MarcWeber/vim-addon-mw-utils'
+  Plugin 'garbas/vim-snipmate'
 
   " Programming
   Plugin 'scrooloose/syntastic'
