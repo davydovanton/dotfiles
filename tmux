@@ -120,7 +120,7 @@ set -g @online_icon "on"
 set -g @offline_icon "off"
 
 # show hostname, date, time, and battery in right status bar
-set-option -g status-right '#(/usr/bin/battery -t) | %H:%M %d/%m/%y#(/usr/bin/online-status -t)'
+set-option -g status-right '#(/usr/local/bin/battery -t) | %H:%M %d/%m/%y#(/usr/local/bin/online-status -t)'
 
 # wm window title string (uses statusbar variables)
 set -g set-titles-string "tmux.#I.#W"
