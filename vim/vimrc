@@ -35,6 +35,9 @@ call vundle#begin()
 
   " Vim text objects
 
+  " Markdown
+  Plugin 'tpope/vim-markdown'
+
   " Color schemes
   Plugin 'cocopon/iceberg.vim'
   Plugin 'junegunn/seoul256.vim'
@@ -170,6 +173,8 @@ if executable('zsh')
 endif
 
 language mes en_US.UTF-8
+
+let g:markdown_fenced_languages = ['javascript', 'ruby', 'sh', 'yaml', 'javascript', 'html', 'vim', 'coffee', 'json', 'diff']
 
 let g:tube_terminal = "iterm"
 
@@ -351,6 +356,8 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType css        set omnifunc=csscomplete#CompleteCSS
 autocmd Filetype gitcommit  setlocal spell textwidth=72
+
+au BufNewFile,BufRead,BufWrite *.md syntax match Comment /\%^---\_.\{-}---$/
 
 " Turn on spell-checking in markdown and text.
 " au BufRead,BufNewFile *.md,*.txt setlocal spell
