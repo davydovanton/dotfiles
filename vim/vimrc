@@ -7,7 +7,8 @@ call vundle#begin()
 
   " Main group
   Plugin 'Yggdroot/indentLine'
-  Plugin 'bling/vim-airline'
+  Plugin 'vim-airline/vim-airline'
+  Plugin 'vim-airline/vim-airline-themes'
   Plugin 'gorodinskiy/vim-coloresque'
   Plugin 'bruno-/vim-husk'
   Plugin 'powerman/vim-plugin-ruscmd'
