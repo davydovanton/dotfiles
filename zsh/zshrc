@@ -89,9 +89,6 @@ export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Ho
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # ALIAS:
-# System:
-alias 'vbox-restart=sudo /Library/StartupItems/VirtualBox/VirtualBox restart'
-
 # Git alias
 alias gcl='git clone'
 alias grb='git rebase'
