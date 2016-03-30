@@ -115,6 +115,7 @@ alias 'tmux=TERM=screen-256color-bce tmux'
 alias 'vim=/usr/local/bin/vim'
 alias 'emacs=/usr/local/bin/emacs'
 alias 'zsh=/usr/local/bin/zsh'
+alias 'pip3=/usr/local/bin/pip3'
 alias 'codespell=/Users/anton/bin/codespell/codespell.py'
 
 # Others

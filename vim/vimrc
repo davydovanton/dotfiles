@@ -49,7 +49,6 @@ call vundle#begin()
   Plugin 'slim-template/vim-slim'
   Plugin 'tpope/vim-rails'
   Plugin 'vim-ruby/vim-ruby'
-  Plugin 'thoughtbot/vim-rspec'
   Plugin 'sunaku/vim-ruby-minitest'
 
   " tmux group
@@ -89,6 +88,7 @@ call vundle#begin()
   Plugin 'wlangstroth/vim-racket'
 
   " test plugin functionality
+  Plugin 't9md/vim-ruby-xmpfilter'
 
 call vundle#end()
 
@@ -226,11 +226,6 @@ let g:changelog_username = "Anton Davydov, <antondavydov.o@gmail.com>"
 " vim-slime
 let g:slime_target = 'tmux'
 
-" vim rspec
-let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
-
 " Disable Ex mode
 map Q <Nop>
 
@@ -289,6 +284,17 @@ nmap <leader>;; :%s:::g<Left><Left>
 
 " vim-partial
 vmap <Leader>x :PartialExtract<cr>
+
+" ruby xmpfilter
+autocmd FileType ruby nmap <buffer> <F5> <Plug>(xmpfilter-mark)
+autocmd FileType ruby xmap <buffer> <F5> <Plug>(xmpfilter-mark)
+autocmd FileType ruby imap <buffer> <F5> <Plug>(xmpfilter-mark)
+
+autocmd FileType ruby nmap <buffer> <F4> <Plug>(xmpfilter-run)
+autocmd FileType ruby xmap <buffer> <F4> <Plug>(xmpfilter-run)
+autocmd FileType ruby imap <buffer> <F4> <Plug>(xmpfilter-run)
+
+let g:rct_completion_use_fri = 1
 
 " NERDTree plugin
 nmap <F2> :NERDTree<cr>
@@ -354,9 +360,11 @@ if has("autocmd")
   autocmd BufNewFile,BufRead *.md set filetype=markdown
 endif
 
+autocmd FileType ruby compiler ruby
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType css        set omnifunc=csscomplete#CompleteCSS
 autocmd Filetype gitcommit  setlocal spell textwidth=72
 
