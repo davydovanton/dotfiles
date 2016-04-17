@@ -12,8 +12,6 @@ start window index of 1
 set-option -g base-index 1
 setw -g pane-base-index 1
 
-run-shell /Users/anton/bin/dotfiles/tmux-plugins/tmux-resurrect/resurrect.tmux
-
 # sane scrolling
 # set-option -g terminal-overrides 'xterm*:smcup@:rmcup@'
 
