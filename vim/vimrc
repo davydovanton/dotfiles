@@ -81,6 +81,10 @@ call vundle#begin()
   Plugin 'eagletmt/ghcmod-vim'
   Plugin 'eagletmt/neco-ghc'
 
+  " rust group
+  Plugin 'rust-lang/rust.vim'
+  Plugin 'racer-rust/vim-racer'
+
   " statistic
   Plugin 'wakatime/vim-wakatime'
 
@@ -225,6 +229,10 @@ let g:changelog_username = "Anton Davydov, <antondavydov.o@gmail.com>"
 
 " vim-slime
 let g:slime_target = 'tmux'
+
+" vim rust
+let g:racer_cmd = "<path-to-racer>/target/release/racer"
+let $RUST_SRC_PATH="<path-to-rust-srcdir>/src/"
 
 " Disable Ex mode
 map Q <Nop>

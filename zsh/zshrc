@@ -51,7 +51,7 @@ export READNULLCMD=less
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(virtualenv git vagrant bundler gem brew ruby heroku tmux rvm bower lein go)
+plugins=(virtualenv git vagrant bundler gem brew ruby heroku tmux rvm bower lein go fasd)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -124,3 +124,5 @@ alias 'weather=curl -4 http://wttr.in/'
 
 alias 'gsd=git icdiff'
 export PATH="/usr/local/bin:$PATH"
+
+export RUST_SRC_PATH=/usr/local/src/rust/src
