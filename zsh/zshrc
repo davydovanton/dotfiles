@@ -27,7 +27,7 @@ export UPDATE_ZSH_DAYS=7
 # DISABLE_LS_COLORS="true"
 
 # Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want to disable command autocorrection
 DISABLE_CORRECTION="true"
@@ -67,18 +67,6 @@ gdmbs() {
 #   gbdbp "^doc-.*"
 gbdbp() {
   git branch  | cut -c3- | egrep $1 | xargs git branch -D
-}
-
-# open dash docset
-#   dash ruby:split
-dash() {
-  open dash://$1
-}
-
-# open ruby docset
-#   dash_ruby split
-dash_ruby() {
-  open dash://ruby:$1
 }
 
 matrix() {
