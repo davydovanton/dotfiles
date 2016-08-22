@@ -28,3 +28,6 @@ Session.vim
 
 # LANGS
 build
+
+# redis dump
+dump.rdb
