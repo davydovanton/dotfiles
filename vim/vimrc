@@ -94,6 +94,7 @@ call vundle#begin()
   Plugin 'wlangstroth/vim-racket'
 
   " test plugin functionality
+  Plugin 'AndrewRadev/splitjoin.vim'
 
 call vundle#end()
 
