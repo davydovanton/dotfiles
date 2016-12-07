@@ -116,3 +116,6 @@ export PATH="/usr/local/bin:$PATH"
 export RUST_SRC_PATH=/usr/local/src/rust/src
 
 alias 'quake=/Applications/ioquake3/ioquake3-1.36.app/Contents/MacOS/ioquake3.ub +connect ec2-54-154-249-130.eu-west-1.compute.amazonaws.com'
+
+# added by travis gem
+[ -f /Users/anton/.travis/travis.sh ] && source /Users/anton/.travis/travis.sh
