@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AboutToPasteTabsWithCancel</key>
+	<true/>
+	<key>AboutToPasteTabsWithCancel_selection</key>
+	<integer>2</integer>
 	<key>AdjustWindowForFontSizeChange</key>
 	<true/>
 	<key>AllowClipboardAccess</key>
@@ -26,6 +30,9 @@
 	<integer>1</integer>
 	<key>Coprocess MRU</key>
 	<array>
+		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.2.4/gems/activesupport-4.1.16/lib/active_support/time_with_zone.rb:322</string>
+		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.1.7@inboundsms_gems/gems/activerecord-3.2.22.2/lib/active_record/querying.rb:</string>
+		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.3.0/gems/travis-1.8.4/bin/travis:7</string>
 		<string>echo nvim /Users/anton/work/repositories/dry-rb/dry-types/lib/dry/types/hash/schema.rb:60</string>
 		<string>echo nvim /Users/anton/bin/dotfiles:</string>
 		<string>echo nvim /Users/anton/work/scripts/ruby/benchmark/inject_vs_each.rb:6</string>
@@ -2142,7 +2149,7 @@
 	<key>PasteFromClipboard</key>
 	<false/>
 	<key>PasteTabToStringTabStopSize</key>
-	<integer>4</integer>
+	<integer>2</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -2199,7 +2206,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-11-21T11:03:27Z</date>
+	<date>2016-12-14T11:36:04Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
