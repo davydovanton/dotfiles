@@ -31,3 +31,6 @@ build
 
 # redis dump
 dump.rdb
+
+# ENV files
+.env.development
