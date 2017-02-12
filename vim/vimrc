@@ -43,6 +43,7 @@ call vundle#begin()
   " Color schemes
   Plugin 'cocopon/iceberg.vim'
   Plugin 'junegunn/seoul256.vim'
+  Plugin 'robertmeta/nofrils'
 
   " Ruby group
   Plugin 'tpope/vim-endwise'
@@ -119,6 +120,7 @@ set guifont=Droid\ Sans\ Mono\ 12
 let g:seoul256_background = 236
 colo seoul256
 colo iceberg
+colo nofrils-dark
 
 " Use relative line numbers
 if exists("&relativenumber")
