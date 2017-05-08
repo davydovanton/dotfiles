@@ -30,6 +30,8 @@
 	<integer>1</integer>
 	<key>Coprocess MRU</key>
 	<array>
+		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.4.1/gems/analytics-ruby-2.0.13/lib/segment/analytics/client.rb:341</string>
+		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.3.0/gems/roda-2.24.0/lib/roda.rb:117</string>
 		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.4.0/gems/structured_warnings-0.2.0/lib/structured_warnings/warning.rb:11</string>
 		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.4.0/gems/structured_warnings-0.2.0/lib/structured_warnings.rb:4</string>
 		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.4.0/gems/rubytree-0.8.3/lib/tree/tree_deps.rb:40</string>
@@ -2230,9 +2232,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-03-06T10:35:29Z</date>
+	<date>2017-04-11T18:04:53Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
+	<key>Secure Input</key>
+	<true/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -2278,7 +2282,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.14</string>
+	<string>3.0.15</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

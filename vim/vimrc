@@ -14,7 +14,7 @@ call vundle#begin()
   Plugin 'powerman/vim-plugin-ruscmd'
   Plugin 'tpope/vim-repeat'
   Plugin 'tpope/vim-surround'
-  Bundle 'bogado/file-line'
+  " Bundle 'bogado/file-line'
 
   " Navigation
   Plugin 'rking/ag.vim'
@@ -32,7 +32,7 @@ call vundle#begin()
   Plugin 'scrooloose/syntastic'
   Plugin 'vim-scripts/tComment'
   Plugin 'jbgutierrez/vim-partial'
-  Plugin 'tpope/vim-rsi'
+  " Plugin 'tpope/vim-rsi'
   Plugin 'elzr/vim-json'
 
   " Vim text objects
@@ -62,37 +62,37 @@ call vundle#begin()
   Plugin 'pangloss/vim-javascript'
 
   " elexir group
-  Plugin 'elixir-lang/vim-elixir'
+  " Plugin 'elixir-lang/vim-elixir'
 
   " coffee group
-  Plugin 'kchmck/vim-coffee-script'
+  " Plugin 'kchmck/vim-coffee-script'
 
   " crystal group
-  Plugin 'rhysd/vim-crystal'
+  " Plugin 'rhysd/vim-crystal'
 
   " julia group
-  Plugin 'JuliaLang/julia-vim'
+  " Plugin 'JuliaLang/julia-vim'
 
   " clojure group
-  Plugin 'guns/vim-clojure-static'
-  Plugin 'guns/vim-clojure-highlight'
-  Plugin 'tpope/vim-fireplace'
-  Plugin 'kien/rainbow_parentheses.vim'
-  Plugin 'venantius/vim-eastwood'
+  " Plugin 'guns/vim-clojure-static'
+  " Plugin 'guns/vim-clojure-highlight'
+  " Plugin 'tpope/vim-fireplace'
+  " Plugin 'kien/rainbow_parentheses.vim'
+  " Plugin 'venantius/vim-eastwood'
 
   " haskell group
-  Plugin 'eagletmt/ghcmod-vim'
-  Plugin 'eagletmt/neco-ghc'
+  " Plugin 'eagletmt/ghcmod-vim'
+  " Plugin 'eagletmt/neco-ghc'
 
   " rust group
-  Plugin 'rust-lang/rust.vim'
-  Plugin 'racer-rust/vim-racer'
+  " Plugin 'rust-lang/rust.vim'
+  " Plugin 'racer-rust/vim-racer'
 
   " statistic
   Plugin 'wakatime/vim-wakatime'
 
   " Racket group
-  Plugin 'wlangstroth/vim-racket'
+  " Plugin 'wlangstroth/vim-racket'
 
   " test plugin functionality
   Plugin 'AndrewRadev/splitjoin.vim'
