@@ -363,6 +363,18 @@ function! RenameFile()
 endfunction
 command! RENAME call RenameFile()
 
+" change CamlCase to under_scores
+function! ToUnderScores() range
+  s#\C\(\<\u[a-z0-9]\+\|[a-z0-9]\+\)\(\u\)#\l\1_\l\2#g
+endfunction
+noremap <leader>cc :call ToUnderScores()<CR>
+
+" change under_scores to CamlCase
+function! ToCamlCase() range
+  s#\(\%(\<\l\+\)\%(_\)\@=\)\|_\(\l\)#\u\1\2#g
+endfunction
+noremap <leader>cC :call ToCamlCase()<CR>
+
 " Automatic commands
 if has("autocmd")
   " Enable file type detection
