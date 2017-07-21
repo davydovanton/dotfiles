@@ -88,6 +88,10 @@ export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Ho
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+# key bindings
+bindkey "^P" up-line-or-search
+bindkey "^N" down-line-or-search
+
 # ALIAS:
 # Git alias
 alias gcl='git clone'

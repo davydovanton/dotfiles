@@ -30,6 +30,8 @@
 	<integer>1</integer>
 	<key>Coprocess MRU</key>
 	<array>
+		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.4.1/gems/rack-test-0.6.3/lib/rack/test.rb:244</string>
+		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.4.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30</string>
 		<string>echo nvim /Users/anton/work/job/transisland/platform/apps/carts/lib/carts/operations.rb:13</string>
 		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.4.1/gems/aws-sdk-core-2.8.14/lib/aws-sdk-core/param_validator.rb:28</string>
 		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.4.1/gems/analytics-ruby-2.0.13/lib/segment/analytics/client.rb:341</string>
@@ -665,6 +667,8 @@
 	<integer>63247</integer>
 	<key>HotkeyCode</key>
 	<integer>111</integer>
+	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
 	<key>HotkeyModifiers</key>
 	<integer>8388864</integer>
 	<key>IRMemory</key>
@@ -2236,7 +2240,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-06-08T16:01:10Z</date>
+	<date>2017-07-16T15:44:34Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -2286,7 +2290,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.15</string>
+	<string>3.1.beta.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
