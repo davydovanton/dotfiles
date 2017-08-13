@@ -123,3 +123,5 @@ alias 'quake=/Applications/ioquake3/ioquake3-1.36.app/Contents/MacOS/ioquake3.ub
 
 # added by travis gem
 [ -f /Users/anton/.travis/travis.sh ] && source /Users/anton/.travis/travis.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
