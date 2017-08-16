@@ -69,6 +69,10 @@ gbdbp() {
   git branch  | cut -c3- | egrep $1 | xargs git branch -D
 }
 
+tmux_dev() {
+  tmux new -s $1 \; new-window \; split-window -h \; split-window -v \; new-window \; select-window -t 1 \; send-keys 'nvim' C-m
+}
+
 matrix() {
   echo -e "\e[1;40m" ; clear ; characters=$( jot -c 94 33 | tr -d '\n' ) ; while :; do echo $LINES $COLUMNS $(( $RANDOM % $COLUMNS)) $(( $RANDOM % 72 )) $characters ;sleep 0.05; done|gawk '{ letters=$5; c=$4; letter=substr(letters,c,1);a[$3]=0;for (x in a) {o=a[x];a[x]=a[x]+1; printf "\033[%s;%sH\033[2;32m%s",o,x,letter; printf "\033[%s;%sH\033[1;37m%s\033[0;0H",a[x],x,letter;if (a[x] >= $1) { a[x]=0; } }}'
 }
@@ -118,8 +122,6 @@ alias 'gsd=git icdiff'
 export PATH="/usr/local/bin:$PATH"
 
 export RUST_SRC_PATH=/usr/local/src/rust/src
-
-alias 'quake=/Applications/ioquake3/ioquake3-1.36.app/Contents/MacOS/ioquake3.ub +connect ec2-54-154-249-130.eu-west-1.compute.amazonaws.com'
 
 # added by travis gem
 [ -f /Users/anton/.travis/travis.sh ] && source /Users/anton/.travis/travis.sh
