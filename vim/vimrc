@@ -175,6 +175,12 @@ set fileencoding=utf-8
 set shm+=I                     " Startup message is irritating
 set dictionary=/usr/share/dict/words
 
+" fold values
+set foldmethod=indent   
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
+
 " Time out on key codes but not mappings.
 " Basically this makes terminal Vim work sanely.
 set notimeout
