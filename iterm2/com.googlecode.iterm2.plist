@@ -30,6 +30,7 @@
 	<integer>1</integer>
 	<key>Coprocess MRU</key>
 	<array>
+		<string>echo nvim /Users/anton/work/job/transisland/platform/apps/cx/system/cx/container.rb:8</string>
 		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.4.1/gems/rack-test-0.6.3/lib/rack/test.rb:244</string>
 		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.4.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30</string>
 		<string>echo nvim /Users/anton/work/job/transisland/platform/apps/carts/lib/carts/operations.rb:13</string>
@@ -2240,7 +2241,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-08-15T21:38:25Z</date>
+	<date>2017-08-31T12:29:35Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
