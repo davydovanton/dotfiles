@@ -31,3 +31,7 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[http "https://git.cluster.davydovanton.com"]
+	sslCAInfo = /Users/anton/.flynn/ca-certs/default.pem
+[credential "https://git.cluster.davydovanton.com"]
+	helper = /usr/local/bin/flynn git-credentials

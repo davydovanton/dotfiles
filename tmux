@@ -1,19 +1,8 @@
 set-option -g default-command "reattach-to-user-namespace -l $SHELL"
 
-# Setup 'v' to begin selection as in Vim
-bind-key -t vi-copy v begin-selection
-bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
-
-# Update default binding of `Enter` to also use copy-pipe
-unbind -t vi-copy Enter
-bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
-
 start window index of 1
 set-option -g base-index 1
 setw -g pane-base-index 1
-
-# sane scrolling
-# set-option -g terminal-overrides 'xterm*:smcup@:rmcup@'
 
 # vim-tmux-navigator plugin
 # Smart pane switching with awareness of vim splits
@@ -29,26 +18,47 @@ set-option -g status-utf8 on
 # supposedly fixes pausing in vim
 set-option -sg escape-time 1
 
-set-window-option -g mode-mouse on
-set-option -g mouse-select-pane on
-set-option -g mouse-resize-pane on
-set-option -g mouse-select-window on
+# Mouse
+# ====
+# Make mouse useful in copy mode
+set -g mouse on
+# Scroll History
+set -g history-limit 30000
+# Set ability to capture on start and restore on exit window data when running an application
+setw -g alternate-screen on
+# Lower escape timing from 500ms to 50ms for quicker response to scroll-buffer access.
+set -s escape-time 50
+# ====
 
-# act like vim
-set-window-option -g mode-keys vi
+# vi
+# ====
 setw -g mode-keys vi
+set -g status-keys vi
+
+# setup 'v' to begin selection as in vim
+bind-key -T copy-mode-vi v send-keys -X begin-selection
+
+# update default binding of `Enter` to also use copy-pipe (os x)
+unbind-key -T copy-mode-vi Enter
+bind-key -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
+bind-key -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
+
+# map vi movement keys as pane movement keys
 bind h select-pane -L
 bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
-bind-key -r C-h select-window -t :-
-bind-key -r C-l select-window -t :+
-unbind [
-bind Escape copy-mode
-unbind p
-bind p paste-buffer
-bind-key -t vi-copy 'v' begin-selection
-bind-key -t vi-copy 'y' copy-selection
+
+# use vi left and right to cycle thru panes
+bind -r C-h select-window -t :-
+bind -r C-l select-window -t :+
+
+# resize panes using vi keys
+bind -r H resize-pane -L 5
+bind -r J resize-pane -D 5
+bind -r K resize-pane -U 5
+bind -r L resize-pane -R 5
+# ====
 
 # act like GNU screen
 unbind C-b

@@ -32,6 +32,7 @@
 	<integer>1</integer>
 	<key>Coprocess MRU</key>
 	<array>
+		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.4.2/gems/dry-validation-0.11.1/lib/dry/validation/extensions/monads.rb:</string>
 		<string>echo nvim /Users/anton/work/job/transisland/platform/apps/cx/system/cx/container.rb:8</string>
 		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.4.1/gems/rack-test-0.6.3/lib/rack/test.rb:244</string>
 		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.4.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30</string>
@@ -51,7 +52,6 @@
 		<string>echo nvim /Users/anton/work/repositories/dry-rb/dry-types/lib/dry/types/hash/schema.rb:60</string>
 		<string>echo nvim /Users/anton/bin/dotfiles:</string>
 		<string>echo nvim /Users/anton/work/scripts/ruby/benchmark/inject_vs_each.rb:6</string>
-		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15</string>
 	</array>
 	<key>CopyLastNewline</key>
 	<false/>
@@ -749,11 +749,13 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>356 321 606 456 0 0 1280 800 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 494 620 392 0 0 1680 1050 </string>
+	<string>530 477 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 456 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>269 332 918 381 0 0 1280 777 </string>
+	<key>NSWindow Frame UKCrashReporter</key>
+	<string>127 443 592 584 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1680 1050 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -2265,7 +2267,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-10T14:54:12Z</date>
+	<date>2018-03-27T10:25:07Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -2292,6 +2294,8 @@
 	<integer>10</integer>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1520088192</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -2317,7 +2321,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.3.beta.1</string>
+	<string>3.1.6beta4</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
