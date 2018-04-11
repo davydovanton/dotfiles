@@ -1,3 +1,5 @@
+set-option -g set-titles on
+
 set-option -g default-command "reattach-to-user-namespace -l $SHELL"
 
 start window index of 1
