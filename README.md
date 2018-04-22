@@ -16,3 +16,9 @@ A lot of stuff. Seriously, a lot of stuff. Check them out in the file browser ab
 ## Feedback
 Suggestions/improvements [welcome](https://github.com/davydovanton/dotfiles/issues)!
 
+
+## Instalation
+### vim
+```
+$ ln -s ~/bin/dotfiles/vim/snippets ~/.config/nvim
+```
