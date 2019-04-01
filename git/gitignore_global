@@ -16,7 +16,7 @@ Desktop.ini
 TAGS
 tags
 
-# Vim       taken from: https://github.com/github/gitignore/blob/master/Global/vim.gitignore
+# Vim       taken from: https://github.com/github/gitignore/blob/master/Global/Vim.gitignore
 # ----------------------------------------------------------------------------------------------
 .*.sw[a-z]
 *.un~
