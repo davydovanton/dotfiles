@@ -32,6 +32,7 @@
 	<integer>1</integer>
 	<key>Coprocess MRU</key>
 	<array>
+		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.5.0/bin/rubocop:23</string>
 		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.5.0/gems/semantic_logger-4.3.0/lib/semantic_logger/base.rb:320</string>
 		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.4.2/gems/dry-validation-0.11.1/lib/dry/validation/extensions/monads.rb:</string>
 		<string>echo nvim /Users/anton/work/job/transisland/platform/apps/cx/system/cx/container.rb:8</string>
@@ -51,7 +52,6 @@
 		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.1.7@inboundsms_gems/gems/activerecord-3.2.22.2/lib/active_record/querying.rb:</string>
 		<string>echo nvim /Users/anton/.rvm/gems/ruby-2.3.0/gems/travis-1.8.4/bin/travis:7</string>
 		<string>echo nvim /Users/anton/work/repositories/dry-rb/dry-types/lib/dry/types/hash/schema.rb:60</string>
-		<string>echo nvim /Users/anton/bin/dotfiles:</string>
 	</array>
 	<key>CopyLastNewline</key>
 	<false/>
@@ -2260,8 +2260,10 @@
 	<integer>8</integer>
 	<key>RightOption</key>
 	<integer>3</integer>
+	<key>SUAutomaticallyUpdate</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
-	<true/>
+	<false/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
@@ -2269,7 +2271,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-08-09T11:24:57Z</date>
+	<date>2019-04-03T10:44:13Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -2323,7 +2325,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.2.0beta8</string>
+	<string>3.2.7beta4</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

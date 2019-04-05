@@ -15,7 +15,7 @@ bind -n C-l run "(tmux display-message -p '#{pane_current_command}' | grep -iqE 
 bind -n C-\ run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)g?(view|nvim|vim?)(diff)?$' && tmux send-keys 'C-\\') || tmux select-pane -l"
 
 # UTF-8
-set-option -g status-utf8 on
+#set-option -g status-utf8 on
 
 # supposedly fixes pausing in vim
 set-option -sg escape-time 1
@@ -93,11 +93,11 @@ setw -g monitor-activity on
 set -g visual-activity on
 
 # disable bell
-set-option -g bell-on-alert off
+#set-option -g bell-on-alert off
 set-option -g bell-action none
 set-option -g visual-bell off
 set-option -g visual-activity off
-set-option -g visual-content off 
+#set-option -g visual-content off 
 # it's work!!! 
 setw -g monitor-activity off
 set -g visual-activity off
@@ -114,26 +114,25 @@ bind-key -r L resize-pane -R 5
 ###########################
 
 # enable UTF-8 support in status bar
-set -g status-utf8 on
+#set -g status-utf8 on
 
 # set refresh interval for status bar
 set -g status-interval 30
 
-# center the status bar
-set -g status-justify left
-
 # show session, window, pane in left status bar
-set -g status-left-length 40
+set -g status-left-length 30
 set -g status-left '#S #I:#P'
 
 # https://github.com/tmux-plugins/tmux-online-status#configure-icons 
 set -g status-interval 30
 set -g @online_icon "on"
 set -g @offline_icon "off"
-
+ 
 # show hostname, date, time, and battery in right status bar
-set-option -g status-right '#(/usr/local/bin/battery -t) | %H:%M %d/%m/%y#(/usr/local/bin/online-status -t)'
-
+# set-option -g status-right '#(/usr/local/bin/battery -t) | %H:%M %d/%m/%y#(/usr/local/bin/online-status -t)'
+set-option -g status-right '%H:%M %d/%m/%y#(/usr/local/bin/online-status -t)'
+set -g status-right-length 30
+ 
 # wm window title string (uses statusbar variables)
 set -g set-titles-string "tmux.#I.#W"
 set-window-option -g automatic-rename off
