@@ -1,3 +1,20 @@
+##########################
+# Plugins
+###########################
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
+set -g @plugin 'tmux-plugins/tmux-battery'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run -b '~/.tmux/plugins/tpm/tpm'
+
+##########################
+# General
+###########################
+
 set-option -g set-titles on
 
 set-option -g default-command "reattach-to-user-namespace -l $SHELL"
@@ -130,7 +147,7 @@ set -g @offline_icon "off"
  
 # show hostname, date, time, and battery in right status bar
 # set-option -g status-right '#(/usr/local/bin/battery -t) | %H:%M %d/%m/%y#(/usr/local/bin/online-status -t)'
-set-option -g status-right '%H:%M %d/%m/%y#(/usr/local/bin/online-status -t)'
+set-option -g status-right '#{battery_icon} #{battery_percentage} | %H:%M %d/%m/%y#(/usr/local/bin/online-status -t)'
 set -g status-right-length 30
  
 # wm window title string (uses statusbar variables)
