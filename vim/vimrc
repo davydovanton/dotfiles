@@ -96,6 +96,7 @@ call vundle#begin()
 
   " test plugin functionality
   Plugin 'AndrewRadev/splitjoin.vim'
+  Plugin 'davydovanton/any-jump.vim'
 
 call vundle#end()
 
@@ -428,3 +429,26 @@ set iskeyword-=. " use dot for limiter word
 set iskeyword+=_
 set path+=**
 set clipboard=unnamed
+
+"------------- any-jump.vim ------------------------------
+let g:any_jump_search_prefered_engine = 'ag'
+let g:any_jump_grouping_enabled = 0
+let g:any_jump_preview_lines_count = 10
+let g:any_jump_window_width_ratio  = 0.7
+let g:any_jump_ignored_files = ['*.tmp', '*.temp', '*.log']
+" Or override all default colors
+let g:any_jump_colors = {
+      \"plain_text":         "Normal",
+      \"preview":            "Operator",
+      \"preview_keyword":    "Directory",
+      \"heading_text":       "StatusLineNC",
+      \"heading_keyword":    "StatusLineNC",
+      \"group_text":         "Operator",
+      \"group_name":         "ErrorMsg",
+      \"more_button":        "Operator",
+      \"more_explain":       "Operator",
+      \"result_line_number": "ErrorMsg",
+      \"result_text":        "Statement",
+      \"result_path":        "ErrorMsg",
+      \"help":               "StatusLineNC"
+      \}
