@@ -1,104 +1,102 @@
 set nocompatible " be improved, required
 filetype off     " required
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-  Plugin 'gmarik/Vundle.vim'
+call plug#begin('~/.vim/plugged')
+  Plug 'gmarik/Vundle.vim'
 
   " Main group
-  Plugin 'Yggdroot/indentLine'
-  Plugin 'vim-airline/vim-airline'
-  Plugin 'vim-airline/vim-airline-themes'
-  Plugin 'gorodinskiy/vim-coloresque'
-  Plugin 'bruno-/vim-husk'
-  Plugin 'powerman/vim-plugin-ruscmd'
-  Plugin 'tpope/vim-repeat'
-  Plugin 'tpope/vim-surround'
-  " Bundle 'bogado/file-line'
+  Plug 'Yggdroot/indentLine'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'gorodinskiy/vim-coloresque'
+  Plug 'bruno-/vim-husk'
+  Plug 'powerman/vim-plugin-ruscmd'
+  Plug 'tpope/vim-repeat'
+  Plug 'tpope/vim-surround'
 
   " Navigation
-  Plugin 'rking/ag.vim'
-  Plugin 'corntrace/bufexplorer'
-  Plugin 'kien/ctrlp.vim'
-  Plugin 'dockyard/vim-easydir'
-  Plugin 'scrooloose/nerdtree'
+  Plug 'rking/ag.vim'
+  Plug 'corntrace/bufexplorer'
+  Plug 'kien/ctrlp.vim'
+  Plug 'dockyard/vim-easydir'
+  Plug 'scrooloose/nerdtree'
+  Plug 'davydovanton/any-jump.vim'
 
   " Snippets
-  Plugin 'tomtom/tlib_vim'
-  Plugin 'MarcWeber/vim-addon-mw-utils'
-  Plugin 'garbas/vim-snipmate'
+  Plug 'tomtom/tlib_vim'
+  Plug 'MarcWeber/vim-addon-mw-utils'
+  Plug 'garbas/vim-snipmate'
 
   " Programming
-  Plugin 'scrooloose/syntastic'
-  Plugin 'vim-scripts/tComment'
-  Plugin 'jbgutierrez/vim-partial'
-  " Plugin 'tpope/vim-rsi'
-  Plugin 'elzr/vim-json'
+  Plug 'scrooloose/syntastic'
+  Plug 'vim-scripts/tComment'
+  Plug 'jbgutierrez/vim-partial'
+  " Plug 'tpope/vim-rsi'
+  Plug 'elzr/vim-json'
 
   " Vim text objects
 
   " Markdown
-  Plugin 'tpope/vim-markdown'
+  Plug 'tpope/vim-markdown'
 
   " Color schemes
-  Plugin 'cocopon/iceberg.vim'
-  Plugin 'junegunn/seoul256.vim'
-  Plugin 'robertmeta/nofrils'
+  Plug 'cocopon/iceberg.vim'
+  Plug 'junegunn/seoul256.vim'
+  Plug 'robertmeta/nofrils'
 
   " Ruby group
-  Plugin 'tpope/vim-endwise'
-  Plugin 'slim-template/vim-slim'
-  Plugin 'tpope/vim-rails'
-  Plugin 'vim-ruby/vim-ruby'
-  Plugin 'tpope/vim-rake'
-  Plugin 'tpope/vim-bundler'
-  Plugin 'sunaku/vim-ruby-minitest'
+  Plug 'tpope/vim-endwise'
+  Plug 'slim-template/vim-slim'
+  Plug 'tpope/vim-rails'
+  Plug 'vim-ruby/vim-ruby'
+  Plug 'tpope/vim-rake'
+  Plug 'tpope/vim-bundler'
+  Plug 'sunaku/vim-ruby-minitest'
 
   " tmux group
-  Plugin 'jgdavey/tslime.vim'
-  Plugin 'jpalardy/vim-slime'
+  Plug 'jgdavey/tslime.vim'
+  Plug 'jpalardy/vim-slime'
 
   " js group
-  Plugin 'pangloss/vim-javascript'
+  Plug 'pangloss/vim-javascript'
 
   " elexir group
-  " Plugin 'elixir-lang/vim-elixir'
+  " Plug 'elixir-lang/vim-elixir'
 
   " coffee group
-  " Plugin 'kchmck/vim-coffee-script'
+  " Plug 'kchmck/vim-coffee-script'
 
   " crystal group
-  " Plugin 'rhysd/vim-crystal'
+  " Plug 'rhysd/vim-crystal'
 
   " julia group
-  " Plugin 'JuliaLang/julia-vim'
+  " Plug 'JuliaLang/julia-vim'
 
   " clojure group
-  " Plugin 'guns/vim-clojure-static'
-  " Plugin 'guns/vim-clojure-highlight'
-  " Plugin 'tpope/vim-fireplace'
-  " Plugin 'kien/rainbow_parentheses.vim'
-  " Plugin 'venantius/vim-eastwood'
+  " Plug 'guns/vim-clojure-static'
+  " Plug 'guns/vim-clojure-highlight'
+  " Plug 'tpope/vim-fireplace'
+  " Plug 'kien/rainbow_parentheses.vim'
+  " Plug 'venantius/vim-eastwood'
 
   " haskell group
-  " Plugin 'eagletmt/ghcmod-vim'
-  " Plugin 'eagletmt/neco-ghc'
+  " Plug 'eagletmt/ghcmod-vim'
+  " Plug 'eagletmt/neco-ghc'
 
   " rust group
-  " Plugin 'rust-lang/rust.vim'
-  " Plugin 'racer-rust/vim-racer'
+  " Plug 'rust-lang/rust.vim'
+  " Plug 'racer-rust/vim-racer'
 
   " statistic
-  Plugin 'wakatime/vim-wakatime'
+  Plug 'wakatime/vim-wakatime'
 
   " Racket group
-  " Plugin 'wlangstroth/vim-racket'
+  " Plug 'wlangstroth/vim-racket'
 
   " test plugin functionality
-  Plugin 'AndrewRadev/splitjoin.vim'
-  Plugin 'davydovanton/any-jump.vim'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-call vundle#end()
+call plug#end()
 
 " Load plugins and indentation for file types
 if has('autocmd')
