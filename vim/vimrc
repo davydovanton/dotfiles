@@ -96,6 +96,8 @@ call plug#begin('~/.vim/plugged')
   " test plugin functionality
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+  Plug 'kassio/neoterm'
+
 call plug#end()
 
 " Load plugins and indentation for file types
@@ -116,10 +118,11 @@ endif
 
 " Color Scheme
 set guifont=Droid\ Sans\ Mono\ 12
-let g:seoul256_background = 236
-colo seoul256
-colo iceberg
+" let g:seoul257_background = 236
+" colo seoul256
+" colo iceberg
 colo nofrils-dark
+" colo ddd
 
 " Use relative line numbers
 if exists("&relativenumber")
@@ -450,3 +453,9 @@ let g:any_jump_colors = {
       \"result_path":        "ErrorMsg",
       \"help":               "StatusLineNC"
       \}
+
+
+"------------- neoterm ------------------------------
+" Send selected contents in visual mode.
+xmap ts <Plug>(neoterm-repl-send)
+nmap ts <Plug>(neoterm-repl-send-line)

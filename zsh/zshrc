@@ -81,7 +81,7 @@ matrix() {
 
 # User commands
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH="/opt/local/bin:/opt/local/sbin:/Users/anton/.rvm/gems/ruby-2.0.0-p247/bin:/Users/anton/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/anton/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/anton/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/Users/anton/.dasht/bin"
+export PATH="/opt/local/bin:/opt/local/sbin:/Users/anton/.rvm/gems/ruby-2.0.0-p247/bin:/Users/anton/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/anton/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/anton/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/Users/anton/.dasht/bin:/Users/anton/company/order-service/"
 
 # Preferred editor for local and remote sessions
 export EDITOR='nvim'
@@ -133,3 +133,5 @@ export RUST_SRC_PATH=/usr/local/src/rust/src
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH=$HOME/.npm-global/bin/:$PATH
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+
+. $(brew --prefix asdf)/asdf.sh

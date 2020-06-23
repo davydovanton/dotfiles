@@ -1,6 +1,9 @@
 ##########################
 # Plugins
 ###########################
+#
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run -b '~/.tmux/plugins/tpm/tpm'
 
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
@@ -8,8 +11,6 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 
 set -g @plugin 'tmux-plugins/tmux-battery'
 
-# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
-run -b '~/.tmux/plugins/tpm/tpm'
 
 ##########################
 # General
@@ -19,7 +20,7 @@ set-option -g set-titles on
 
 set-option -g default-command "reattach-to-user-namespace -l $SHELL"
 
-start window index of 1
+# start window index of 1
 set-option -g base-index 1
 setw -g pane-base-index 1
 
@@ -29,7 +30,7 @@ bind -n C-h run "(tmux display-message -p '#{pane_current_command}' | grep -iqE 
 bind -n C-j run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)g?(view|nvim|vim?)(diff)?$' && tmux send-keys C-j) || tmux select-pane -D"
 bind -n C-k run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)g?(view|nvim|vim?)(diff)?$' && tmux send-keys C-k) || tmux select-pane -U"
 bind -n C-l run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)g?(view|nvim|vim?)(diff)?$' && tmux send-keys C-l) || tmux select-pane -R"
-bind -n C-\ run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)g?(view|nvim|vim?)(diff)?$' && tmux send-keys 'C-\\') || tmux select-pane -l"
+# bind -n C-\ run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)g?(view|nvim|vim?)(diff)?$' && tmux send-keys 'C-\\') || tmux select-pane -l"
 
 # UTF-8
 #set-option -g status-utf8 on
@@ -166,21 +167,21 @@ set -g status-justify centre
 ###########################
 
 # color status bar
-set -g status-bg colour235
-set -g status-fg colour245
+set-option -g status-bg colour235
+set-option -g status-fg colour245
 
-set -g message-bg colour235
-set -g message-fg white
+set-option -g message-bg colour235
+set-option -g message-fg white
 
 # highlight current window
-setw -g window-status-current-fg black
-setw -g window-status-current-bg blue
+set-window-option  -g window-status-current-fg black
+set-window-option  -g window-status-current-bg blue
 
-setw -g window-status-fg white 
-setw -g window-status-bg colour235
+set-window-option -g window-status-fg white 
+set-window-option -g window-status-bg colour235
 
 # set color of active pane
-set -g pane-border-fg colour235
+set -g pane-border-fg colour236
 set -g pane-border-bg black
 set -g pane-active-border-fg blue
 set -g pane-active-border-bg black

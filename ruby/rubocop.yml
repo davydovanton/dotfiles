@@ -7,10 +7,10 @@ PercentLiteralDelimiters:
 MethodLength:
   Enabled: false
 
-AlignHash:
+HashAlignment:
   Enabled: false
 
-AlignParameters:
+ParameterAlignment:
   Enabled: false
 
 ClassAndModuleChildren:
@@ -51,10 +51,10 @@ AllCops:
     - '**/Vagrantfile'
   Exclude:
 
-Style/SpaceInsideBlockBraces:
+Layout/SpaceInsideBlockBraces:
   Enabled: false
 
-Style/SpaceBeforeBlockBraces:
+Layout/SpaceBeforeBlockBraces:
   Enabled: false
 # Allow safe assignment in conditions.
 Style/ParenthesesAroundCondition:
