@@ -6,8 +6,7 @@ call plug#begin('~/.vim/plugged')
 
   " Main group
   Plug 'Yggdroot/indentLine'
-  Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
+  Plug 'nvim-lualine/lualine.nvim'
   Plug 'gorodinskiy/vim-coloresque'
   Plug 'bruno-/vim-husk'
   Plug 'powerman/vim-plugin-ruscmd'
@@ -37,7 +36,7 @@ call plug#begin('~/.vim/plugged')
   " Vim text objects
 
   " Markdown
-  Plug 'tpope/vim-markdown'
+  " Plug 'tpope/vim-markdown'
 
   " Color schemes
   Plug 'cocopon/iceberg.vim'
@@ -58,7 +57,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'jpalardy/vim-slime'
 
   " js group
-  Plug 'pangloss/vim-javascript'
+  " Plug 'pangloss/vim-javascript'
 
   " elexir group
   " Plug 'elixir-lang/vim-elixir'
@@ -88,15 +87,21 @@ call plug#begin('~/.vim/plugged')
   " Plug 'racer-rust/vim-racer'
 
   " statistic
-  Plug 'wakatime/vim-wakatime'
+  " Plug 'wakatime/vim-wakatime'
 
   " Racket group
   " Plug 'wlangstroth/vim-racket'
 
   " test plugin functionality
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
   Plug 'kassio/neoterm'
+
+  " obsidian
+  " Plug 'epwalsh/obsidian.nvim'
+  " Plug 'nvim-lua/plenary.nvim'
+  " Plug 'hrsh7th/nvim-cmp'
+
 
 call plug#end()
 
@@ -243,8 +248,11 @@ let g:changelog_username = "Anton Davydov, <antondavydov.o@gmail.com>"
 let g:slime_target = 'tmux'
 
 " vim rust
-let g:racer_cmd = "<path-to-racer>/target/release/racer"
-let $RUST_SRC_PATH="<path-to-rust-srcdir>/src/"
+" let g:racer_cmd = "<path-to-racer>/target/release/racer"
+" let $RUST_SRC_PATH="<path-to-rust-srcdir>/src/"
+
+" fix copy full string command, source: https://www.reddit.com/r/neovim/comments/petq61/neovim_060_y_not_yanking_line_but_to_end_of_line/
+nnoremap Y Y
 
 " Disable Ex mode
 map Q <Nop>
@@ -321,6 +329,48 @@ nmap <F2> :NERDTree<cr>
 
 cabbrev CSScomb :!csscomb %:p<CR>
 cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
+
+" --------------------------------------
+
+" lualine.nvim plugin
+lua << END
+  require('lualine').setup {
+    options = {
+      icons_enabled = false,
+      theme = 'seoul256',
+      component_separators = { left = ':', right = ':'},
+      section_separators = { left = ' ', right = ' '},
+    },
+    sections = {
+      lualine_a = {'mode'},
+      lualine_b = {'branch'},
+      lualine_c = {'filename'},
+      lualine_x = {'encoding', 'fileformat', 'filetype'},
+      lualine_y = {'progress'},
+      lualine_z = {'location'}
+    },
+    inactive_sections = {
+      lualine_a = {},
+      lualine_b = {},
+      lualine_c = {'filename'},
+      lualine_x = {'location'},
+      lualine_y = {},
+      lualine_z = {}
+    },
+    tabline = {},
+    winbar = {},
+    inactive_winbar = {},
+    extensions = {'nvim-tree'}
+  }
+END
+
+" obsidian.nvim plugin
+lua << END
+  require('obsidian').setup {
+  }
+END
+
+" --------------------------------------
 
 " bind K to grep word under cursor
 nnoremap <leader>f :grep! "\b<C-R><C-W>\b" --ignore-dir log<CR>:cw<CR>
@@ -407,7 +457,7 @@ au BufNewFile,BufRead,BufWrite *.md syntax match Comment /\%^---\_.\{-}---$/
 
 " Neovim confixg
 if has('nvim')
-  let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+  " let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
   tnoremap <Esc> <c-\><c-n>
   tnoremap <C-[> <c-\><c-n>
 
